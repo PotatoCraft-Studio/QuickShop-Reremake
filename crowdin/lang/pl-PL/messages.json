@@ -93,7 +93,7 @@
     "stored-enchants": "&5Przechowywane Enchanty",
     "shop-information": "&aInfo:",
     "owner": "&aWłaściciel: {0}",
-    "item": "&aItem: &e{0}",
+    "item": "&aPrzedmiot: &e{0}",
     "item-holochat-error": "&c[Error]",
     "preview": "&b[Podgląd przedmiotu]",
     "space": "&aMiejsce: &e{0}",
