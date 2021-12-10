@@ -115,8 +115,8 @@
   "blacklisted-item": "&cNemůžete prodat tento item, protože je na černé listině",
   "how-much-to-trade-for": "&aZadejte do chatu: Cenu za kolik chcete prodávat &e{1}x {0}&a.",
   "command": {
-    "format": "&a/{0} {1} &e- {2}",
-    "format-disabled": "&c/{0} {1} &7- {2}",
+    "format": "&8| &f/{0} {1} &7- &f{2}",
+    "format-disabled": "&8| &c/{0} {1} &7- &f{2}",
     "toggle-unlimited": {
       "unlimited": "&aObchod je nyní neomezený",
       "limited": "&aObchod je nyní omezený"
@@ -129,7 +129,7 @@
     "now-buying": "&aNyní &dKUPUJETE &e{0}",
     "now-selling": "&aNyní &bPRODÁVÁTE &e{0}",
     "cleaning": "&aOdstraňuji obchody bez skladu...",
-    "reloading": "&aConfiguration reloaded. &eSome changes may require reboot to affect. \n&7(Notice: Reloading behavior has been changed after 4.0.9.10, we now only reload configuration but not whole plugin to ensure the server won't crashed.)",
+    "reloading": "&bKonfigurace a soubory znovu načteny. Některé změny budou znatelné až po restartu serveru. &7(Pozor: Znovunačítání bylo změněno u verze 4.0.9.10, nově se znovu načítá jen konfigurace, ne vše.)",
     "cleaned": "&aOdstraněno &e{0}&a obchodů.",
     "no-type-given": "&cPoužití: /qs find <item>",
     "no-world-given": "&cZadejte název světa",
@@ -177,9 +177,9 @@
       "unban": "&eOdbanování hráče z obchodu",
       "freeze": "&eZakázat nebo povolit obchodování obchodu",
       "lock": "&ePřepnout stav zámku obchodu",
-      "taxaccount": "&eSet the tax account that shop using",
-      "toggledisplay": "&eToggle the shop display item status",
-      "purge": "&eStart the shop purge task in background"
+      "taxaccount": "&fNastaví daně, které obchod zaplatí",
+      "toggledisplay": "&fPřepne obchodu status ukazovaného předmětu",
+      "purge": "&fZačne promazávání obchodů na pozadí"
     },
     "disabled": "&cTento příkaz je zakázán: &e{0}",
     "feature-not-enabled": "Funkce není v konfiguraci povolena."
@@ -229,14 +229,14 @@
     "lock-hover": "&ePovolit/Zakázat ochranu zámku obchodu.",
     "freeze": "&eRežim zmražení: &b{0} &e[&d&lPřepnout&e]",
     "freeze-hover": "&ePřepnout stav zmrazení obchodu.",
-    "toggledisplay": "&eDisplayItem: &b{0} &e[&d&lToggle&e]",
-    "toggledisplay-hover": "&eToggle the shop's displayitem status"
+    "toggledisplay": "&fPředmět: &b{0} &7[&d&3Přepni&7]",
+    "toggledisplay-hover": "&fPřepne obchodu status ukazovaného předmětu"
   },
   "tableformat": {
-    "full_line": "+---------------------------------------------------+",
-    "left_half_line": "+--------------------",
-    "right_half_line": "--------------------+",
-    "left_begin": "| "
+    "full_line": "&r",
+    "left_half_line": "&r",
+    "right_half_line": "&r",
+    "left_begin": "&8| &7» "
   },
   "booleanformat": {
     "success": "&a✔",
