@@ -127,7 +127,7 @@
     "no-owner-given": "&cIngen ägare angiven",
     "new-owner": "&aNy ägare: &e{0}",
     "now-buying": "&dBUYING&a numera&e{0}",
-    "now-selling": "&bSELLING&a numera&e{0}",
+    "now-selling": "&bSÄLJER &anumera &e{0}",
     "cleaning": "&aTar bort tomma butiker...",
     "reloading": "&aKonfiguration laddad. &eVissa ändringar kan kräva omstart för att påverka. \n&7(Notis: Laddningsbeteende har ändrats efter 4.. 9.10, vi nu bara ladda om konfigurationen men inte hela plugin för att säkerställa att servern inte kraschar.)",
     "cleaned": "&aTog bort &{0}&a butiker.",
