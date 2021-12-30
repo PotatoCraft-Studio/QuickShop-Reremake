@@ -278,7 +278,8 @@
       "Uh! Új frissítés jelent meg {0} verzióra! Frissítsd most!",
       "Mire gondolsz? Csak nem arra, hogy a {0} verzió most jött ki? Frissítsd most!",
       "Doki, a QuickShopnak van egy új frissítése: {0}! Jó lenne frissíteni~",
-      "Ko~ko~da~yo~ a QuickShopnak van egy új frissítése: {0}~"
+      "Ko~ko~da~yo~ a QuickShopnak van egy új frissítése: {0}~",
+      "Paimon want told you the QuickShop have new update {0}!"
     ],
     "remote-disable-warning": "&cThis version of QuickShop is marked as disabled by the remote server, which means this version may have serious problem, get details from our SpigotMC page: {0}. This warning will continue to appear until you switch to a stable version, but it will not affect your server's performance.",
     "label": {
