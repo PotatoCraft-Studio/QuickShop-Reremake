@@ -96,6 +96,7 @@
     "owner": "&a주인 : {0}",
     "item": "&a아이템 : &e{0}",
     "item-holochat-error": "&c[오류]",
+    "item-holochat-data-too-large": "&c[Error] Item NBT is too large for showing",
     "preview": "&b[아이템 미리보기]",
     "space": "&a빈 공간 : &e{0}",
     "stock": "&a재고품 &e{0}",
@@ -354,5 +355,7 @@
   "display-turn-off": "&a상점 디스플레이를 성공적으로 껏습니다.",
   "shop-purged-start": "&a상점 정리가 시작되었습니다. 자세한 내용은 콘솔을 확인하십시오.",
   "purchase-out-of-stock": "&c이 상점은 재고가 다 떨어졌으니 주인에게 문의하여 재고보충을 요구해주세요.",
-  "purchase-out-of-space": "&c이 상점은 공간이 부족하니 주인에게 문의하여 상자를 비우라고 요청해주세요."
+  "purchase-out-of-space": "&c이 상점은 공간이 부족하니 주인에게 문의하여 상자를 비우라고 요청해주세요.",
+  "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
+  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
 }
