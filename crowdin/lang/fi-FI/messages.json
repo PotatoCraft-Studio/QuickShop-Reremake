@@ -278,7 +278,8 @@
       "Jeeeeeeee! Uusi päivitys {0} on tullut! Päivitä!",
       "Mitä mieltä olet? {0} on julkaistu! Päivitä!",
       "Tohtori, QuickShop sai uuden päivityksen {0}! Sinun pitäisi päivittää~",
-      "Ko~ko~da~yo~ QuickShop on saanut uuden päivityksen {0}~"
+      "Ko~ko~da~yo~ QuickShop on saanut uuden päivityksen {0}~",
+      "Paimon want told you the QuickShop have new update {0}!"
     ],
     "remote-disable-warning": "&cTämä QuickShopin version on merkitty etäpalvelimella poistettavaksi versioksi. Se tarkoittaa, että tällä versiolla saattaa olla vakavia ongelmia. Lisätietoja saat meidän SpigotMC sivuilta: {0}. Tämä varoitus ilmestyy joka kerta kunnes vaihdat pluginin vakaaseen versioon. Tämä varoitus ei vaikuta palvelimesi toimintaan.",
     "label": {
