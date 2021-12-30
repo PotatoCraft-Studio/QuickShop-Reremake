@@ -278,7 +278,8 @@
       "Ahhhhhh! Nový update {0}! Updatujte plugin!",
       "Co si myslíte? {0} byla vydána! Updatujte plugin!",
       "Doktor, QuickShop má novou aktualizaci {0}! Měl byste aktualizovat~",
-      "Ko~ko~da~yo~ QuickShop má nový update {0}~"
+      "Ko~ko~da~yo~ QuickShop má nový update {0}~",
+      "Paimon want told you the QuickShop have new update {0}!"
     ],
     "remote-disable-warning": "&cTato verze QuickShopu je označena jako zakázaná vzdáleným serverem, což znamená, že tato verze může mít vážný problém, získejte podrobnosti na naší SpigotMC stránce: {0}. Toto varování se bude objevovat dokud nepřepnete na stabilní verzi, ale neovlivní to výkon vašeho serveru.",
     "label": {
