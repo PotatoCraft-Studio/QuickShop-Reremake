@@ -278,7 +278,8 @@
       "Ahhhhhh! Ny oppdatering {0}! Oppdater!",
       "Hva tenker du? {0} har blitt lansert! Oppdater!",
       "Doktor, QuickShop har en ny oppdatering {0}! Du bør oppdatere~",
-      "Ko~ko~da~yo~ QuickShop har en ny oppdatering {0} ~"
+      "Ko~ko~da~yo~ QuickShop har en ny oppdatering {0} ~",
+      "Paimon want told you the QuickShop have new update {0}!"
     ],
     "remote-disable-warning": "&cDenne versjonen av QuickShop er markert som deaktivert av ekstern tjener; som betyr at denne versjonen kan ha alvorlige problemer. Les om detaljer fra SpigotMC siden: {0}. Denne advarselen vil fortsette å vise inntil du bytter til en stabil versjon, men det vil ikke påvirke serverens ytelse.",
     "label": {
