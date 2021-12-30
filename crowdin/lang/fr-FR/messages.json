@@ -96,6 +96,7 @@
     "owner": "&aPropriétaire: {0}",
     "item": "&aObjet: &e{0}",
     "item-holochat-error": "&c[Erreur]",
+    "item-holochat-data-too-large": "&c[Error] Item NBT is too large for showing",
     "preview": "&b[Aperçu de l'article]",
     "space": "&aEspace restant: &e{0}",
     "stock": "&aStock restant&e{0}",
@@ -354,5 +355,7 @@
   "display-turn-off": "Désactivation réussie de l'affichage de la boutique.",
   "shop-purged-start": "&aLa purge a commencé, vérifiez la console pour plus de détails.",
   "purchase-out-of-stock": "&cCette boutique est en rupture de stock, contactez le propriétaire ou le personnel de la boutique pour recharger le stock.",
-  "purchase-out-of-space": "&cCette boutique est à court d'espace, contactez le propriétaire ou le personnel de la boutique pour vider la boutique."
+  "purchase-out-of-space": "&cCette boutique est à court d'espace, contactez le propriétaire ou le personnel de la boutique pour vider la boutique.",
+  "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
+  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
 }
