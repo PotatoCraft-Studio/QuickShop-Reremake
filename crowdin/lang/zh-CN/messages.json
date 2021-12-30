@@ -278,7 +278,8 @@
       "啊啊啊啊啊啊啊啊啊啊！更新 {0} 来了！快升级！",
       "你在想什么呢？{0}已经发布了！快更新！",
       "博士，QuickShop有一个新的更新 {0}！你应该考虑一下更新了~",
-      "Ko~ko~da~yo~QuickShop有一个新的更新 {0}~"
+      "Ko~ko~da~yo~QuickShop有一个新的更新 {0}~",
+      "Paimon want told you the QuickShop have new update {0}!"
     ],
     "remote-disable-warning": "&c这个版本的 QuickShop 被远程服务器标记为禁用，意味着这个版本可能存在严重的问题，可以在我们的 SpigotMC 插件页面获取详细信息。{0}. 此警告将继续出现，直到您切换到一个稳定的版本，但它不会影响您的服务器的性能。",
     "label": {
