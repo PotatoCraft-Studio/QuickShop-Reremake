@@ -278,7 +278,8 @@
       "Ahhhhhhh! Nova atualização {0}! Atualize!",
       "O que cê tá esperando? {0} foi lançado! Atualize!",
       "Doutor, o QuickShop tem uma nova atualização {0}! Você deve atualizar~",
-      "Ko~ko~da~yo~ O QuickShop tem uma nova atualização {0}~"
+      "Ko~ko~da~yo~ O QuickShop tem uma nova atualização {0}~",
+      "Paimon want told you the QuickShop have new update {0}!"
     ],
     "remote-disable-warning": "&cEsta versão do QuickShop está marcada como desabilitada pelo servidor remoto o que significa que esta versão pode ter problemas sérios, obtenha detalhes da nossa página do SpigotMC: {0}. Este aviso continuará a aparecer até que você mude para uma versão estável, mas isso não afetará a performance do seu servidor.",
     "label": {
