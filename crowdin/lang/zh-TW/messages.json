@@ -96,6 +96,7 @@
     "owner": "&a商店主人 ： {0}",
     "item": "&a商品 ： &e{0}",
     "item-holochat-error": "&c[錯誤]",
+    "item-holochat-data-too-large": "&c[Error] Item NBT is too large for showing",
     "preview": "&b[物品預覽]",
     "space": "&a空間 ： &e{0}",
     "stock": "&a庫存 ： &e{0} 個",
@@ -354,5 +355,7 @@
   "display-turn-off": "&a成功關閉商店懸浮物顯示",
   "shop-purged-start": "&a已開始商店清理，請查看控制台以獲得詳細資訊。",
   "purchase-out-of-stock": "&c該商店已缺貨，請聯繫商店商店店主或商店員工補充庫存。",
-  "purchase-out-of-space": "&c該商店空間不足，請聯繫商店商店店主或商店員工清空商店。"
+  "purchase-out-of-space": "&c該商店空間不足，請聯繫商店商店店主或商店員工清空商店。",
+  "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
+  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
 }
