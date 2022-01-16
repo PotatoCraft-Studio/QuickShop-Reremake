@@ -5,7 +5,7 @@
   "translation-version": "支持版本 ： Reremake （重製版）",
   "translation-contributors": "貢獻人員 ： Timtower、Netherfoam、KaiNoMood、Mgazul、JackTheChicken 和 Andre_601",
   "translation-country": "語言 ： &b&l繁體中文 Chinese Traditional （zh_TW）",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&c無法找到儲物箱商店，你需要注視著儲物箱。",
   "not-looking-at-shop": "&c無法找到儲物箱商店，你需要注視著儲物箱。",
   "no-anythings-in-your-hand": "&c手上沒有任何東西。",
@@ -185,7 +185,8 @@
       "lock": "&e切換商店上鎖狀態",
       "taxaccount": "&e設定商店使用的稅金帳戶",
       "toggledisplay": "&e切換商店顯示物品狀態",
-      "purge": "&e在背景啟動商店清理任務"
+      "purge": "&e在背景啟動商店清理任務",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&c這個指令被停用 ： &e{0}",
     "feature-not-enabled": "該功能沒有在設定檔案中啟用。"
