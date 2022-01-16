@@ -5,7 +5,7 @@
   "translation-version": "Version suportée: Reremake",
   "translation-contributors": "Contributeurs : Timtower, Netherfoam, KaiNoMood, Mgazul, JackThePicken, Andre_601 et brunopaiva15, HiiRaZ",
   "translation-country": "Langue: Français (fr_FR)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cCould not find a block for creating shop. You need to look at one.",
   "not-looking-at-shop": "&cImpossible de trouver un QuickShop. Vous devez en regarder un.",
   "no-anythings-in-your-hand": "&cVous n'avez aucun objet dans votre main.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&aPassage réussi en mode développeur. Actualisation de QuickShop...",
     "wrong-args": "&cCommande invalide. Utilisez &l/qs help &cpour voir une liste de commandes.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aAide QuickShop",
       "unlimited": "&eDonne à une boutique un stock illimité.",
       "setowner": "&eModifie le propriétaire d'une boutique.",
@@ -185,8 +186,7 @@
       "lock": "&eChanger l'état de verrouillage de la boutique",
       "taxaccount": "&eDéfinir le compte de taxe que la boutique utilise",
       "toggledisplay": "&eActiver/désactiver l'affichage de l'item de la boutique",
-      "purge": "&eLancer la purge des boutiques en arrière-plan",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&eLancer la purge des boutiques en arrière-plan"
     },
     "disabled": "&cCette commande est désactivée : &e{0}",
     "feature-not-enabled": "Cette fonctionnalité n'est pas activée dans le fichier de configuration."
