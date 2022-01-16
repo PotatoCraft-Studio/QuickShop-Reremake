@@ -5,7 +5,7 @@
   "translation-version": "Wspierana wersja: Reremake",
   "translation-contributors": "Współtwórcy: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken i Andre_601",
   "translation-country": "Język: Polski (pl_PL)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cNie można znaleźć bloku do tworzenia sklepu. Musisz patrzeć się na jeden z nich.",
   "not-looking-at-shop": "&cNie można znaleźć QuickShop. Musisz na niego patrzeć.",
   "no-anythings-in-your-hand": "&cW twojej ręce nic nie ma.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&aPomyślnie przełączono się do trybu developerskiego. Przeładuj QuickShop...",
     "wrong-args": "&cNieprawidłowy argument. Użyj &l/qs help &caby zobaczyć listę poleceń.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aPomoc Sklepu",
       "unlimited": "&eDaje sklepowi nieograniczone zapasy.",
       "setowner": "&eZmienia właściciela sklepu.",
@@ -185,8 +186,7 @@
       "lock": "&eZmień status blokady sklepu",
       "taxaccount": "&eUstaw konto podatkowe, które sklep ma używać",
       "toggledisplay": "&ePrzełącz stan wyświetlania przedmiotu w sklepie",
-      "purge": "&eUruchom zadanie czyszczenia sklepu w tle",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&eUruchom zadanie czyszczenia sklepu w tle"
     },
     "disabled": "&cTa komenda jest wyłączona: &e{0}",
     "feature-not-enabled": "Ta funkcja nie jest włączona w pliku konfiguracyjnym."
