@@ -5,7 +5,7 @@
   "translation-version": "Supportversion: Reremake",
   "translation-contributors": "Medhjälpare: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken och Andre_601",
   "translation-country": "Språkområde: Svenska (sv_SE)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cKunde inte hitta ett block för att skapa butik. Du måste titta på ett.",
   "not-looking-at-shop": "&cKunde inte hitta en QuickShop. Du måste titta på en.",
   "no-anythings-in-your-hand": "&cDet finns inget i din hand.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&aFramgångsrikt inaktiverat utvecklarläge. Laddar om QuickShop...",
     "wrong-args": "&cOgiltiga argument. Använd &l/qs help &rför att se en lista över kommandon.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aQuickShop-hjälp",
       "unlimited": "&eGer en butik obegränsat lager.",
       "setowner": "&eÄndrar ägare av en butik.",
@@ -185,8 +186,7 @@
       "lock": "&eVäxla butikens låsstatus",
       "taxaccount": "&eAnge skattekontot som butiken använder",
       "toggledisplay": "&eVäxla butikens status för visningsobjekt",
-      "purge": "&eStarta rensningsuppgifter för butiker i bakgrunden",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&eStarta rensningsuppgifter för butiker i bakgrunden"
     },
     "disabled": "&cDetta kommando är inaktiverat: &e{0}",
     "feature-not-enabled": "Funktionen är inte aktiverad i konfigurationsfilen."
