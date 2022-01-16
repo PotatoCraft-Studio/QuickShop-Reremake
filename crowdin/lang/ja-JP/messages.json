@@ -5,7 +5,7 @@
   "translation-version": "&c&lサポートバージョン: &b&lReremake",
   "translation-contributors": "貢献者: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken, Andre_601 and Namiu",
   "translation-country": "&c&l言語圏: &b&l日本語 (ja_JP)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cショップを作成するためのブロックが見つかりませんでした。確認する必要があります。",
   "not-looking-at-shop": "&cQuickShopが見つかりませんでした。確認する必要があります。",
   "no-anythings-in-your-hand": "&cあなたは手に何も持っていません。",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&a開発者モードを無効化しました。QuickShopをリロードしています。",
     "wrong-args": "&c無効な引数です。コマンドを&l/qs help &rで確認して下さい。",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aQuickShop ヘルプ",
       "unlimited": "&eショップに無制限の在庫を与えます",
       "setowner": "&eショップの所有権を変更します",
@@ -185,8 +186,7 @@
       "lock": "&eショップのロック状態を切り替える",
       "taxaccount": "&eショップで使用する税のアカウントを設定する",
       "toggledisplay": "&eショップのアイテムの状態を切り替える",
-      "purge": "&eバックグラウンドでショップのパージタスクを開始する",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&eバックグラウンドでショップのパージタスクを開始する"
     },
     "disabled": "&cこのコマンドは無効です: &e{0}",
     "feature-not-enabled": "この機能は設定ファイルで有効になっていません。"
