@@ -5,7 +5,7 @@
   "translation-version": "Podpora verze: Reremake",
   "translation-contributors": "Přispěli: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Jazyková Zóna: Czech (cs_CZ)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cNelze najít blok pro vytvoření obchodu. Musíte se na něj dívat.",
   "not-looking-at-shop": "&cNelze najít QuickShop. Musíš se na něj podívat.",
   "no-anythings-in-your-hand": "&cNemáš v ruce žádný předmět.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&7Úspěšně zakázán vývojářský režim. Reloaduji QuickShop...",
     "wrong-args": "&cNeplatné argumenty. Použij &l/qs help &cpro zobrazení seznamu příkazů.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&bNápověda pro QuickShop",
       "unlimited": "&fDá obchodu neomezený sklad.",
       "setowner": "&fZmění vlastnictví obchodu.",
@@ -185,8 +186,7 @@
       "lock": "&fPřepnout stav zámku obchodu",
       "taxaccount": "&fNastaví daně, které obchod zaplatí",
       "toggledisplay": "&fPřepne obchodu status ukazovaného předmětu",
-      "purge": "&fZačne promazávání obchodů na pozadí",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&fZačne promazávání obchodů na pozadí"
     },
     "disabled": "&cTento příkaz je zakázán: &b{0}",
     "feature-not-enabled": "Funkce není v konfiguraci povolena."
