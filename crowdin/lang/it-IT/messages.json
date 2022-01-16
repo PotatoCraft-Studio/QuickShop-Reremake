@@ -5,7 +5,7 @@
   "translation-version": "Versione di Supporto: Reremake",
   "translation-contributors": "Collaboratori: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601, sandtechnology, MiniMoro",
   "translation-country": "Lingua zona: Italian (it_IT)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "Impossibile trovare un blocco per la creazione del negozio. Devi guardarne uno.",
   "not-looking-at-shop": "&cImpossibile trovare un negozio. È necessario guardarne uno.",
   "no-anythings-in-your-hand": "&cNon hai nulla in mano.",
@@ -185,7 +185,8 @@
       "lock": "&eCambia lo stato di blocco del negozio",
       "taxaccount": "&eImposta la tassa utilizzata dal negozio",
       "toggledisplay": "&eAttiva/disattiva lo stato dell'articolo di visualizzazione del negozio",
-      "purge": "&eAvvia l'attività di eliminazione del negozio in background"
+      "purge": "&eAvvia l'attività di eliminazione del negozio in background",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cQuesto comando è disabilitato: &e{0}",
     "feature-not-enabled": "Questa funzione non è abilitata nel file di configurazione."
