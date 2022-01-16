@@ -5,7 +5,7 @@
   "translation-version": "Støttet versjon: Reremake",
   "translation-contributors": "Bidragsytere: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Språksone: Norsk (no_NO)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&cKunne ikke finne en blokk for å opprette butikk. Du må se på en gyldig blokk.",
   "not-looking-at-shop": "&cKunne ikke finne en QuickShop. Du må se på en butikk.",
   "no-anythings-in-your-hand": "&cDet er ingenting i hånden din.",
@@ -185,7 +185,8 @@
       "lock": "&eEndre butikkens låsestatus",
       "taxaccount": "&eSett avgift konto som butikken bruker",
       "toggledisplay": "&eSlå av/på butikken vise varestatus",
-      "purge": "&eStart fjerning av butikker i bakgrunnen"
+      "purge": "&eStart fjerning av butikker i bakgrunnen",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cDenne kommandoen er deaktivert: &e{0}",
     "feature-not-enabled": "Denne funksjonen er ikke aktivert i konfigurasjonsfilen."
