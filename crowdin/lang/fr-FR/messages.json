@@ -5,7 +5,7 @@
   "translation-version": "Version suportée: Reremake",
   "translation-contributors": "Contributeurs : Timtower, Netherfoam, KaiNoMood, Mgazul, JackThePicken, Andre_601 et brunopaiva15, HiiRaZ",
   "translation-country": "Langue: Français (fr_FR)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&cCould not find a block for creating shop. You need to look at one.",
   "not-looking-at-shop": "&cImpossible de trouver un QuickShop. Vous devez en regarder un.",
   "no-anythings-in-your-hand": "&cVous n'avez aucun objet dans votre main.",
@@ -185,7 +185,8 @@
       "lock": "&eChanger l'état de verrouillage de la boutique",
       "taxaccount": "&eDéfinir le compte de taxe que la boutique utilise",
       "toggledisplay": "&eActiver/désactiver l'affichage de l'item de la boutique",
-      "purge": "&eLancer la purge des boutiques en arrière-plan"
+      "purge": "&eLancer la purge des boutiques en arrière-plan",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cCette commande est désactivée : &e{0}",
     "feature-not-enabled": "Cette fonctionnalité n'est pas activée dans le fichier de configuration."
