@@ -149,7 +149,7 @@
     "now-nolonger-debuging": "&aUtviklermodus er deaktivert. Laster om QuickShop...",
     "wrong-args": "&cUgyldig argument. Bruk &l/qs help &cfor å se en liste over kommandoer.",
     "description": {
-      "alwayscounting": "&eSet the shop alwayscounting status",
+      "alwayscounting": "&eSett om butikken alltid skal telle containere selv om den er uendelig",
       "title": "&aQuickShop hjelp",
       "unlimited": "&eGir en butikk ubegrenset lagerbeholdning.",
       "setowner": "&eEndre eierskap på en butikk.",
