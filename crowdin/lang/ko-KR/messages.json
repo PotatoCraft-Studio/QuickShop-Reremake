@@ -5,7 +5,7 @@
   "translation-version": "지원 버전: Reremake",
   "translation-contributors": "기여자: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "언어 지역: 한국어 (ko_KR)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&c상점을 만들수 잇는 블럭을 찾을수 없습니다. 상점으로 만들 블럭을 봐야합니다.",
   "not-looking-at-shop": "&c상점을 찾을수 없습니다. 상점을 보고있어야만 합니다.",
   "no-anythings-in-your-hand": "&c당신의 손에 아무것도 없습니다.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&a개발자 모드 비활성화 완료. Quickshop 리로드 중...",
     "wrong-args": "&c명령어가 올바르지 않습니다. &l/qs help &r를 사용하여 명령어 목록을 확인해주세요.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aQuickshop 도움말",
       "unlimited": "&a상점의 개수제한을 무제한으로 설정합니다.",
       "setowner": "&e상점의 주인을 설정합니다.",
@@ -185,8 +186,7 @@
       "lock": "상점 잠금 상태 전환",
       "taxaccount": "&e쇼핑에서 사용하는 세금 계정 설정",
       "toggledisplay": "&e상점 표시 항목 상태 전환",
-      "purge": "&a백그라운드에서 상점 정리 작업을 시작합니다",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&a백그라운드에서 상점 정리 작업을 시작합니다"
     },
     "disabled": "&c이 명령어는 비활성화 되어있습니다: &e{0}",
     "feature-not-enabled": "이옵션은 컨피그에서 비활성 상태입니다"
