@@ -5,7 +5,7 @@
   "translation-version": "Podpora verze: Reremake",
   "translation-contributors": "Přispěli: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Jazyková Zóna: Czech (cs_CZ)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&cNelze najít blok pro vytvoření obchodu. Musíte se na něj dívat.",
   "not-looking-at-shop": "&cNelze najít QuickShop. Musíš se na něj podívat.",
   "no-anythings-in-your-hand": "&cNemáš v ruce žádný předmět.",
@@ -185,7 +185,8 @@
       "lock": "&fPřepnout stav zámku obchodu",
       "taxaccount": "&fNastaví daně, které obchod zaplatí",
       "toggledisplay": "&fPřepne obchodu status ukazovaného předmětu",
-      "purge": "&fZačne promazávání obchodů na pozadí"
+      "purge": "&fZačne promazávání obchodů na pozadí",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cTento příkaz je zakázán: &b{0}",
     "feature-not-enabled": "Funkce není v konfiguraci povolena."
