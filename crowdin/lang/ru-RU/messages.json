@@ -5,7 +5,7 @@
   "translation-version": "Поддерживаемая версия: Reremake",
   "translation-contributors": "Участники: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken и Andre_601",
   "translation-country": "Языковой регион: Русский (ru_RU)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&cНе удалось найти блок для создания магазина. Вас нужно посмотреть.",
   "not-looking-at-shop": "&cНе удалось найти магазин, возможно не зарегистрирован.",
   "no-anythings-in-your-hand": "&cУ вас ничего нет в руках.",
@@ -185,7 +185,8 @@
       "lock": "&eПереключает состояние блокировки магазина",
       "taxaccount": "&eУстанавливает налоговый счет, который магазин использует",
       "toggledisplay": "&eПереключает отображение товара в магазине (над сундука)",
-      "purge": "&aЗапускает задачи очистки магазина в фоновом режиме"
+      "purge": "&aЗапускает задачи очистки магазина в фоновом режиме",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cДанная команда недоступна: &e{0}",
     "feature-not-enabled": "Функция не включена в конфигурации."
