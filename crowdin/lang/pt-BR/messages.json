@@ -5,7 +5,7 @@
   "translation-version": "Versão de suporte: Remake",
   "translation-contributors": "Contribuidores: Torre de Timor, Netherfoam, KaiNoMood, Mgazul, JackTheChicken e Andre_601",
   "translation-country": "Zona do idioma: Português Brasileiro (pt_BR)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cNão conseguimos achar um bloco para criar a loja. Você precisa olhar para um.",
   "not-looking-at-shop": "Não conseguimos encontrar uma QuickShop. Você precisa estar olhando para uma.",
   "no-anythings-in-your-hand": "&cNão há nada na sua mão.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&aModo de Desenvolvedor &cdesabilitado &acom sucesso. Recarregando QuickShop...",
     "wrong-args": "&cArgumento inválido. Use &l/qs help &cpara ver uma lista de comandos.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aAjuda do QuickShop",
       "unlimited": "&eDá um estoque ilimitado para a loja.",
       "setowner": "&eAltera o proprietário de uma loja.",
@@ -185,8 +186,7 @@
       "lock": "&eAlterne o status de bloqueio da loja",
       "taxaccount": "&eDefinir a conta de taxa que a loja usa",
       "toggledisplay": "&eAtivar o display de itens nessa loja",
-      "purge": "&eStart the shop purge task in background",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&eStart the shop purge task in background"
     },
     "disabled": "&cEste comando está desativado: &e{0}",
     "feature-not-enabled": "Esse recurso não está ativado no arquivo de configuração."
