@@ -149,7 +149,7 @@
     "now-nolonger-debuging": "&aFramgångsrikt inaktiverat utvecklarläge. Laddar om QuickShop...",
     "wrong-args": "&cOgiltiga argument. Använd &l/qs help &rför att se en lista över kommandon.",
     "description": {
-      "alwayscounting": "&eSet the shop alwayscounting status",
+      "alwayscounting": "&aAnge om butiken alltid räknar behållarens kapacitet även om den är obegränsad",
       "title": "&aQuickShop-hjälp",
       "unlimited": "&eGer en butik obegränsat lager.",
       "setowner": "&eÄndrar ägare av en butik.",
