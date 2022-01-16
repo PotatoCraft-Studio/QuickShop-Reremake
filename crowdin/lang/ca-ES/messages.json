@@ -149,7 +149,7 @@
     "now-nolonger-debuging": "%Mode de desenvolupador desactivat. Recarregant QuickShop...",
     "wrong-args": "&cArgument invàlid. Utilitza &l/qs help &cper veure una llista de comandes.",
     "description": {
-      "alwayscounting": "&eSet the shop alwayscounting status",
+      "alwayscounting": "&eSet if shop always counting container even is unlimited",
       "title": "&aAjuda de QuickShop",
       "unlimited": "&eLi dona estoc il·limitat a una botiga.",
       "setowner": "&eCanvia l'amo d'una botiga.",
