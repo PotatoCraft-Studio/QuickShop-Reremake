@@ -5,7 +5,7 @@
   "translation-version": "Tuettu versio: Reremake",
   "translation-contributors": "Avustajat: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Kielialue: Suomi (fi_FI)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&cCould not find a block for creating shop. You need to look at one.",
   "not-looking-at-shop": "&cQuickShoppia ei löytynyt. Sinun täytyy katsoa yhtä.",
   "no-anythings-in-your-hand": "&cKädessäsi ei ole mitään.",
@@ -185,7 +185,8 @@
       "lock": "&eVaihda kaupan lukituksen tila",
       "taxaccount": "&eSet the tax account that shop using",
       "toggledisplay": "&eToggle the shop display item status",
-      "purge": "&eStart the shop purge task in background"
+      "purge": "&eStart the shop purge task in background",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cTämä komento on poistettu käytöstä: &e{0}",
     "feature-not-enabled": "Tämä ominaisuus ei ole käytössä asetustiedostossa."
