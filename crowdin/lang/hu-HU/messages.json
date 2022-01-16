@@ -5,7 +5,7 @@
   "translation-version": "Támogatott Verzió: Reremake",
   "translation-contributors": "Közreműködők: Timtower, Netherfoam, KaiNoMood and Mgazul",
   "translation-country": "Nyelv Zóna: Magyar (hu_HU)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cNem tudtuk létrehozni a boltot, mert nem találtunk blokkot. Nézz egy blokkra.",
   "not-looking-at-shop": "&cEz nem egy bolt amire nézel.",
   "no-anythings-in-your-hand": "&cNincs semmi a kezedben.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&aSikeresen átváltottál gyártás módba. Gyorsbolt újratöltése...",
     "wrong-args": "&cInvalid argument. Use &l/qs help &cto see a list of commands.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aGyorsbolt segítség",
       "unlimited": "&eA bolt korlátlanná tétele",
       "setowner": "&eMegváltoztatja a bolt tulajdonosát",
@@ -185,8 +186,7 @@
       "lock": "&eSwitch the shop's lock status",
       "taxaccount": "&eSet the tax account that shop using",
       "toggledisplay": "&eToggle the shop display item status",
-      "purge": "&eStart the shop purge task in background",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&eStart the shop purge task in background"
     },
     "disabled": "&cThis command is disabled: &e{0}",
     "feature-not-enabled": "This feature is not enabled in the config file."
