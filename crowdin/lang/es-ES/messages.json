@@ -5,7 +5,7 @@
   "translation-version": "&c&lVersión Soportada: &b&lReremake",
   "translation-contributors": "Contribuidores: Randall_Rut, Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken y Andre_601",
   "translation-country": "&c&lZona de idioma: &b&lEspañol (es_ES)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cCould not find a block for creating shop. You need to look at one.",
   "not-looking-at-shop": "&cNo se pudo encontrar ninguna tienda. Tienes que mirar hacia una.",
   "no-anythings-in-your-hand": "&cNo hay nada en tu mano.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&aModo desarrollador deshabilitado. Recargando QuickShop...",
     "wrong-args": "&cArgumento no válido. Usa la ayuda &l/qs &cpara ver una lista de comandos.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aAyuda de QuickShop",
       "unlimited": "&eDa un stock ilimitado a una tienda.",
       "setowner": "&eCambia al propietario de la tienda.",
@@ -185,8 +186,7 @@
       "lock": "&eCambiar el estado de bloqueo de la tienda",
       "taxaccount": "&eConfigure la cuenta de impuestos que compra usando",
       "toggledisplay": "&eAlterna el estado de visualización del artículo de la tienda",
-      "purge": "&aIniciar la tarea de purga de la tienda en segundo plano",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&aIniciar la tarea de purga de la tienda en segundo plano"
     },
     "disabled": "&cEste comando esta deshabilitado: &e{0}",
     "feature-not-enabled": "La característica no está habilitada en la configuración."
