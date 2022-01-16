@@ -5,7 +5,7 @@
   "translation-version": "Unterstütze Version: Reremake",
   "translation-contributors": "Mitwirkende: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken und Andre_601",
   "translation-country": "Sprache: Deutsch (de_DE)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&cKonnte keinen Block zum erstellen eines Shops finden. Stelle sicher dass du einen ansiehst.",
   "not-looking-at-shop": "&cKonnte keinen QuickShop finden. Du musst auf einen schauen.",
   "no-anythings-in-your-hand": "&cEs befindet sich nichts in deiner Hand.",
@@ -185,7 +185,8 @@
       "lock": "&eWechsle den Lock-Status des Shops",
       "taxaccount": "&eSetze den Account welcher für die Steuern des Shops benutzt werden soll",
       "toggledisplay": "&eÄndere den Anzeigestatus des Items für den Shop",
-      "purge": "&eStarte den Shop-Löschvorgang im Hintergrund"
+      "purge": "&eStarte den Shop-Löschvorgang im Hintergrund",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cDieser Befehl ist deaktiviert: &e{0}",
     "feature-not-enabled": "Dieses Feature ist nicht in der Config Datei aktiviert."
