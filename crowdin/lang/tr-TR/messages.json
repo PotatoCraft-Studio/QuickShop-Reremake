@@ -5,7 +5,7 @@
   "translation-version": "Destek Versiyonu: Reremake",
   "translation-contributors": "Katkıda Bulunanlar: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Dil Bölgesi: Türkçe (tr_TR)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&cCould not find a block for creating shop. You need to look at one.",
   "not-looking-at-shop": "&sHiç QuickShop bulunamadı. Birine bakman lazım.",
   "no-anythings-in-your-hand": "&cElinde hiçbir şey yok.",
@@ -185,7 +185,8 @@
       "lock": "&eMarketin kilit statüsünü değiştir",
       "taxaccount": "&eAlışveriş yapılırken verginin aktarılacağı hesabı ayarlar",
       "toggledisplay": "&eToggle the shop display item status",
-      "purge": "&eMarket temizleme görevini arka planda başlatır"
+      "purge": "&eMarket temizleme görevini arka planda başlatır",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cBu komut aktif değil: &e{0}",
     "feature-not-enabled": "Bu özellik yapılandırma dosyasında aktif değil."
