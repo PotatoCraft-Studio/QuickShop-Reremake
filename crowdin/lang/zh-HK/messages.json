@@ -5,7 +5,7 @@
   "translation-version": "支援版本: Reremake",
   "translation-contributors": "貢獻者: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken 同埋 Andre_601",
   "translation-country": "語言區域: 中文(zh_HK)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&c找不到用來創建商店的箱子，你需正視著一個。",
   "not-looking-at-shop": "&c我搵唔到一個箱子商店, 唔該望住個箱, 如果唔係我辨認唔到",
   "no-anythings-in-your-hand": "&c 你隻手都冇嘢",
@@ -185,7 +185,8 @@
       "lock": "&eSwitch the shop's lock status",
       "taxaccount": "&eSet the tax account that shop using",
       "toggledisplay": "&eToggle the shop display item status",
-      "purge": "&eStart the shop purge task in background"
+      "purge": "&eStart the shop purge task in background",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cThis command is disabled: &e{0}",
     "feature-not-enabled": "This feature is not enabled in the config file."
