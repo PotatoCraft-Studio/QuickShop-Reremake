@@ -5,7 +5,7 @@
   "translation-version": "ondersteunende versie: Reremake",
   "translation-contributors": "Medewerkers",
   "translation-country": "Taal Zone: Engels (nl_US)",
-  "language-version": "64",
+  "language-version": "63",
   "not-looking-at-valid-shop-block": "&cCould not find a block for creating shop. You need to look at one.",
   "not-looking-at-shop": "&cGeen QuickShop gevonden, je moet naar een QuickShop kijken.",
   "no-anythings-in-your-hand": "&cJe hebt niks in je hand.",
@@ -149,6 +149,7 @@
     "now-nolonger-debuging": "&aOntwikkelaarsmodus uitgeschakeld. QuickShop herladen...",
     "wrong-args": "&cOngeldige argumenten. Gebruik &l/qs help &cvoor een lijst met commando's.",
     "description": {
+      "alwayscounting": "&eSet the shop alwayscounting status",
       "title": "&aQuickShop help",
       "unlimited": "&eGeeft een winkel onbeperkt voorraad.",
       "setowner": "Verandert de eigendom van een winkel.",
@@ -185,8 +186,7 @@
       "lock": "&eVerander de vergrendelstatus van de winkel",
       "taxaccount": "&eSet the tax account that shop using",
       "toggledisplay": "&eToggle the shop display item status",
-      "purge": "&eStart the shop purge task in background",
-      "alwayscounting": "&eSet the shop alwayscounting status"
+      "purge": "&eStart the shop purge task in background"
     },
     "disabled": "&cDeze opdracht is uitgeschakeld: &e{0}",
     "feature-not-enabled": "De functie niet ingeschakeld in de config."
