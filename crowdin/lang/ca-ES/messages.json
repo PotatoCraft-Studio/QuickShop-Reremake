@@ -5,7 +5,7 @@
   "translation-version": "Versió suportada: Reremake",
   "translation-contributors": "Contributors: Hoswolf, Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Zona de l'idioma: Català (ca_ES)",
-  "language-version": "63",
+  "language-version": "64",
   "not-looking-at-valid-shop-block": "&cCould not find a block for creating shop. You need to look at one.",
   "not-looking-at-shop": "No s'ha trobat cap QuickShop. N'has d'estar mirant una.",
   "no-anythings-in-your-hand": "No tens res a la mà.",
@@ -185,7 +185,8 @@
       "lock": "&eCanvia l'estat de bloqueig d'una botiga.",
       "taxaccount": "&eSet the tax account that shop using",
       "toggledisplay": "&eToggle the shop display item status",
-      "purge": "&eStart the shop purge task in background"
+      "purge": "&eStart the shop purge task in background",
+      "alwayscounting": "&eSet the shop alwayscounting status"
     },
     "disabled": "&cAquesta comanda està desactivada: &e{0}",
     "feature-not-enabled": "Aquesta opció no està activada a l'arxiu de configuració."
