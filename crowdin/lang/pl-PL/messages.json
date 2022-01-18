@@ -97,7 +97,7 @@
     "owner": "&aWłaściciel: {0}",
     "item": "&aPrzedmiot: &e{0}",
     "item-holochat-error": "&c[Error]",
-    "item-holochat-data-too-large": "&c[Error] Item NBT is too large for showing",
+    "item-holochat-data-too-large": "&c[Error] Element NBT jest zbyt duży, aby go pokazać",
     "preview": "&b[Podgląd przedmiotu]",
     "space": "&aMiejsce: &e{0}",
     "stock": "&aIlość &e{0}",
