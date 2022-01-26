@@ -360,5 +360,6 @@
   "purchase-out-of-stock": "&cDenne butikken er tom på lager, kontakt butikkeier eller ansatte for å fylle på lageret.",
   "purchase-out-of-space": "&cDenne butikken er tom for plass, kontakt butikkeier eller ansatte for å tømme butikken.",
   "safe-mode": "&cQuickShop er nå i sikkerhetsmodus, du kan derfor ikke åpne denne butikkbeholderen. Ta kontakt med serveradministrator for å fikse feilene.",
-  "safe-mode-admin": "&c&lADVARSEL: &cQuickShop på denne serveren kjører nå i sikkerhetsmodus, ingen funksjoner vil fungere. Vennligst skriv inn &e/qs &ckommando for å sjekke eventuelle feil."
+  "safe-mode-admin": "&c&lADVARSEL: &cQuickShop på denne serveren kjører nå i sikkerhetsmodus, ingen funksjoner vil fungere. Vennligst skriv inn &e/qs &ckommando for å sjekke eventuelle feil.",
+  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
 }
