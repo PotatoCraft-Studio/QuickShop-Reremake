@@ -26,7 +26,6 @@ import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
@@ -34,6 +33,8 @@ import org.jetbrains.annotations.Nullable;
 import org.maxgamer.quickshop.QuickShop;
 import org.maxgamer.quickshop.api.chat.ComponentPackage;
 import org.maxgamer.quickshop.api.localization.text.TextManager;
+import org.maxgamer.quickshop.api.shop.inventory.InventoryWrapper;
+import org.maxgamer.quickshop.api.shop.inventory.InventoryWrapperManager;
 import org.maxgamer.quickshop.shop.ShopSignPersistentDataType;
 import org.maxgamer.quickshop.shop.ShopSignStorage;
 
@@ -71,7 +72,7 @@ public interface Shop {
      * @param loc2Drop       The location to drops items if player inventory are full
      * @param paramInt       How many buyed?
      */
-    void buy(@NotNull UUID buyer, @NotNull Inventory buyerInventory, @NotNull Location loc2Drop, int paramInt);
+    void buy(@NotNull UUID buyer, @NotNull InventoryWrapper buyerInventory, @NotNull Location loc2Drop, int paramInt);
 
     /**
      * Check the display location, and teleport, respawn if needs.
@@ -175,7 +176,7 @@ public interface Shop {
      * @param loc2Drop        The location to be drop if buyer inventory full ( if player enter a number that < 0, it will turn to buying item)
      * @param paramInt        How many sold?
      */
-    void sell(@NotNull UUID seller, @NotNull Inventory sellerInventory, @NotNull Location loc2Drop, int paramInt);
+    void sell(@NotNull UUID seller, @NotNull InventoryWrapper sellerInventory, @NotNull Location loc2Drop, int paramInt);
 
     /**
      * Generate new sign texts on shop's sign.
@@ -554,6 +555,13 @@ public interface Shop {
     void claimShopSign(@NotNull Sign sign);
 
     /**
+     * Gets the shop Inventory
+     * @return Inventory
+     */
+    @Nullable
+    InventoryWrapper getInventory();
+
+    /**
      * Checks if a Sign is a ShopSign
      *
      * @param sign Target sign
@@ -630,4 +638,25 @@ public interface Shop {
         //For back-ward compatibility
         throw new UnsupportedOperationException("setAlwaysCountingContainer is not implemented");
     }
+
+    /**
+     * Gets the InventoryWrapper provider name (the plugin name who register it), usually is QuickShop
+     * @return InventoryWrapper
+     */
+    @NotNull
+    String getInventoryWrapperProvider();
+
+    /**
+     * Gets the symbol link that created by InventoryWrapperManager
+     * @return InventoryWrapper
+     */
+    @NotNull
+    String saveToSymbolLink();
+
+    /**
+     * Sets shop's Inventory to a new Inventory
+     * @param wrapper Inventory
+     * @param manager InventoryWrapperManager
+     */
+    void setInventory(@NotNull InventoryWrapper wrapper, @NotNull InventoryWrapperManager manager);
 }

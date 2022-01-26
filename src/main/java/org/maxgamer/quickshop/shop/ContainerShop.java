@@ -19,7 +19,6 @@
 
 package org.maxgamer.quickshop.shop;
 
-import com.lishid.openinv.IOpenInv;
 import de.tr7zw.nbtapi.NBTTileEntity;
 import io.papermc.lib.PaperLib;
 import lombok.EqualsAndHashCode;
@@ -38,8 +37,6 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -50,6 +47,8 @@ import org.maxgamer.quickshop.QuickShop;
 import org.maxgamer.quickshop.api.chat.ComponentPackage;
 import org.maxgamer.quickshop.api.event.*;
 import org.maxgamer.quickshop.api.shop.*;
+import org.maxgamer.quickshop.api.shop.inventory.InventoryWrapper;
+import org.maxgamer.quickshop.api.shop.inventory.InventoryWrapperManager;
 import org.maxgamer.quickshop.chat.platform.minedown.BungeeQuickChat;
 import org.maxgamer.quickshop.util.MsgUtil;
 import org.maxgamer.quickshop.util.Util;
@@ -108,6 +107,10 @@ public class ContainerShop implements Shop {
     private String currency;
     private boolean disableDisplay;
     private UUID taxAccount;
+    @NotNull
+    private String inventoryWrapperProvider;
+    @NotNull
+    private InventoryWrapper inventory;
 
 
     private ContainerShop(@NotNull ContainerShop s) {
@@ -129,6 +132,8 @@ public class ContainerShop implements Shop {
         this.disableDisplay = s.disableDisplay;
         this.taxAccount = s.taxAccount;
         this.isAlwaysCountingContainer = s.isAlwaysCountingContainer;
+        this.inventory = s.inventory;
+        this.inventoryWrapperProvider = s.inventoryWrapperProvider;
         initDisplayItem();
     }
 
@@ -157,7 +162,9 @@ public class ContainerShop implements Shop {
             @NotNull YamlConfiguration extra,
             @Nullable String currency,
             boolean disableDisplay,
-            @Nullable UUID taxAccount) {
+            @Nullable UUID taxAccount,
+            @NotNull String inventoryWrapperProvider,
+            @NotNull InventoryWrapper inventory) {
         Util.ensureThread(false);
         this.location = location;
         this.price = price;
@@ -183,10 +190,12 @@ public class ContainerShop implements Shop {
         this.currency = currency;
         this.disableDisplay = disableDisplay;
         this.taxAccount = taxAccount;
-        initDisplayItem();
         this.dirty = false;
+        this.isAlwaysCountingContainer = getExtra(plugin).getBoolean("is-always-counting-container", false);
+        this.inventory = inventory;
+        this.inventoryWrapperProvider = inventoryWrapperProvider;
+        initDisplayItem();
         updateShopData();
-        isAlwaysCountingContainer = getExtra(plugin).getBoolean("is-always-counting-container", false);
     }
 
     private void updateShopData() {
@@ -197,7 +206,6 @@ public class ContainerShop implements Shop {
             Util.debugLog("Shop " + this + " currency data upgrade successful.");
         }
         setDirty();
-        this.update();
     }
 
     @Override
@@ -279,7 +287,12 @@ public class ContainerShop implements Shop {
         }
         item = item.clone();
         int itemMaxStackSize = Util.getItemMaxStackSize(item.getType());
-        Inventory inv = this.getInventory();
+        InventoryWrapper inv = this.getInventory();
+        if(inv == null){
+            plugin.getLogger().warning("Failed to add item "+item+" x"+amount+" to shop "+this+": Inventory null.");
+            Util.debugLog("Failed to add item "+item+" x"+amount+" to shop "+this+": Inventory null. Provider: "+inventoryWrapperProvider);
+            return;
+        }
         int remains = amount;
         while (remains > 0) {
             int stackSize = Math.min(remains, itemMaxStackSize);
@@ -312,7 +325,7 @@ public class ContainerShop implements Shop {
      * @param amount         The amount to buy
      */
     @Override
-    public void buy(@NotNull UUID buyer, @NotNull Inventory buyerInventory,
+    public void buy(@NotNull UUID buyer, @NotNull InventoryWrapper buyerInventory,
                     @NotNull Location loc2Drop, int amount) {
         Util.ensureThread(false);
         amount = amount * item.getAmount();
@@ -349,7 +362,12 @@ public class ContainerShop implements Shop {
                                 + "!");
             }
         } else {
-            Inventory chestInv = this.getInventory();
+            InventoryWrapper chestInv = this.getInventory();
+            if(chestInv == null){
+                plugin.getLogger().warning("Failed to process buy, reason: "+item+" x"+amount+" to shop "+this+": Inventory null.");
+                Util.debugLog("Failed to process buy, reason: "+item+" x"+amount+" to shop "+this+": Inventory null.");
+                return;
+            }
             for (int i = 0; amount > 0 && i < contents.length; i++) {
                 ItemStack item = contents[i];
                 if (item != null && this.matches(item)) {
@@ -620,7 +638,12 @@ public class ContainerShop implements Shop {
         }
         item = item.clone();
         int itemMaxStackSize = Util.getItemMaxStackSize(item.getType());
-        Inventory inv = this.getInventory();
+        InventoryWrapper inv = this.getInventory();
+        if(inv == null){
+            plugin.getLogger().warning("Failed to process item remove, reason: "+item+" x"+amount+" to shop "+this+": Inventory null.");
+            Util.debugLog("Failed to process item remove, reason: "+item+" x"+amount+" to shop "+this+": Inventory null.");
+            return;
+        }
         int remains = amount;
         while (remains > 0) {
             int stackSize = Math.min(remains, itemMaxStackSize);
@@ -640,7 +663,7 @@ public class ContainerShop implements Shop {
      * @param amount          The amount to sell
      */
     @Override
-    public void sell(@NotNull UUID seller, @NotNull Inventory sellerInventory,
+    public void sell(@NotNull UUID seller, @NotNull InventoryWrapper sellerInventory,
                      @NotNull Location loc2Drop, int amount) {
         Util.ensureThread(false);
         amount = item.getAmount() * amount;
@@ -660,7 +683,12 @@ public class ContainerShop implements Shop {
                 amount -= stackSize;
             }
         } else {
-            ItemStack[] chestContents = Objects.requireNonNull(this.getInventory()).getContents();
+            if(this.getInventory() == null){
+                plugin.getLogger().warning("Failed to process sell, reason: "+item+" x"+amount+" to shop "+this+": Inventory null.");
+                Util.debugLog("Failed to process sell, reason: "+item+" x"+amount+" to shop "+this+": Inventory null.");
+                return;
+            }
+            ItemStack[] chestContents = this.getInventory().getContents();
             for (int i = 0; amount > 0 && i < chestContents.length; i++) {
                 // Can't clone it here, it could be null
                 ItemStack item = chestContents[i];
@@ -875,7 +903,7 @@ public class ContainerShop implements Shop {
             plugin.getDatabaseHelper()
                     .updateShop(SimpleShopModerator.serialize(this.moderator), this.getItem(),
                             unlimited, shopType.toID(), this.getPrice(), x, y, z, world,
-                            this.saveExtraToYaml(), this.currency, this.disableDisplay, this.taxAccount == null ? null : this.taxAccount.toString());
+                            this.saveExtraToYaml(), this.currency, this.disableDisplay, this.taxAccount == null ? null : this.taxAccount.toString(),this.inventoryWrapperProvider,saveToSymbolLink());
             this.dirty = false;
         } catch (Exception e) {
             plugin.getLogger().log(Level.WARNING,
@@ -883,6 +911,28 @@ public class ContainerShop implements Shop {
         } finally {
             updating = false;
         }
+    }
+
+    @NotNull
+    public String saveToSymbolLink(){
+        try {
+            return plugin.getInventoryWrapperRegistry().get(this.inventoryWrapperProvider).mklink(this.inventory);
+        }catch (Exception exception){
+            plugin.getLogger().log(Level.WARNING,"Failed to create shop symbol link, Shop data may lose!",exception);
+            return plugin.getInventoryWrapperRegistry().get(plugin.getName()).mklink(this.inventory);
+        }
+    }
+
+    @Override
+    public void setInventory(@NotNull InventoryWrapper wrapper, @NotNull InventoryWrapperManager manager) {
+        String provider = plugin.getInventoryWrapperRegistry().find(manager);
+        if(provider == null){
+            throw new IllegalArgumentException("The manager "+manager.getClass().getName()+" not registered in registry.");
+        }
+        this.inventory = wrapper;
+        this.inventoryWrapperProvider = provider;
+        setDirty();
+        update();
     }
 
     private void notifyDisplayItemChange() {
@@ -1093,7 +1143,11 @@ public class ContainerShop implements Shop {
         if (this.unlimited && !isAlwaysCountingContainer()) {
             return -1;
         }
-        int space = Util.countSpace(this.getInventory(), this);
+        if(this.getInventory() == null){
+            Util.debugLog("Failed to calc RemainingSpace for shop "+this+": Inventory null.");
+            return 0;
+        }
+        int space = this.getInventory().countSpace(this);
         new ShopInventoryCalculateEvent(this, space, -1).callEvent();
         return space;
     }
@@ -1109,7 +1163,11 @@ public class ContainerShop implements Shop {
         if (this.unlimited && !isAlwaysCountingContainer()) {
             return -1;
         }
-        int stock = Util.countItems(this.getInventory(), this);
+        if(this.getInventory() == null){
+            Util.debugLog("Failed to calc RemainingStock for shop "+this+": Inventory null.");
+            return 0;
+        }
+        int stock = this.getInventory().countItems(this);
         new ShopInventoryCalculateEvent(this, -1, stock).callEvent();
         return stock;
     }
@@ -1313,47 +1371,58 @@ public class ContainerShop implements Shop {
     /**
      * @return The chest this shop is based on.
      */
-    public @Nullable Inventory getInventory() {
+    public @Nullable InventoryWrapper getInventory() {
         Util.ensureThread(false);
-        BlockState state = PaperLib.getBlockState(location.getBlock(), false).getState();
-        Inventory inv = null;
-        try {
-            if (state.getType() == Material.ENDER_CHEST
-                    && plugin.getOpenInvPlugin() != null) { //FIXME: Need better impl
-                IOpenInv openInv = ((IOpenInv) plugin.getOpenInvPlugin());
-                inv = openInv.getSpecialEnderChest(
-                        Objects.requireNonNull(
-                                openInv.loadPlayer(
-                                        plugin.getServer().getOfflinePlayer(this.moderator.getOwner()))),
-                        plugin.getServer().getOfflinePlayer((this.moderator.getOwner())).isOnline())
-                        .getBukkitInventory();
-            }
-        } catch (Exception e) {
-            Util.debugLog(e.getMessage());
-            return null;
+        if (this.inventory.isValid()) {
+            return this.inventory;
         }
-        InventoryHolder container;
-        try {
-            container = (InventoryHolder) state;
-            inv = container.getInventory();
-        } catch (Exception e) {
-            if (!createBackup) {
-                createBackup = Util.backupDatabase();
-                if (createBackup) {
-                    this.delete(false);
-                }
-            } else {
-                this.delete(true);
+        if (!createBackup) {
+            createBackup = Util.backupDatabase();
+            if (createBackup) {
+                this.delete(false);
             }
-            plugin.logEvent(new ShopRemoveLog(Util.getNilUniqueId(), "Inventory Invalid", this.saveToInfoStorage()));
-            Util.debugLog(
-                    "Inventory doesn't exist anymore: " + this + " shop was removed.");
-            return null;
+        } else {
+            this.delete(true);
         }
-
-        ShopInventoryEvent event = new ShopInventoryEvent(this, inv);
-        event.callEvent();
-        return event.getInventory();
+        plugin.logEvent(new ShopRemoveLog(Util.getNilUniqueId(), "Inventory Invalid", this.saveToInfoStorage()));
+        Util.debugLog("Inventory doesn't exist anymore: " + this + " shop was deleted.");
+        return null;
+//        BlockState state = PaperLib.getBlockState(location.getBlock(), false).getState();
+//        try {
+//            if (state.getType() == Material.ENDER_CHEST
+//                    && plugin.getOpenInvPlugin() != null) { //FIXME: Need better impl
+//                IOpenInv openInv = ((IOpenInv) plugin.getOpenInvPlugin());
+//               this.inventory =  new BukkitInventoryWrapper(openInv.getSpecialEnderChest(
+//                                Objects.requireNonNull(
+//                                        openInv.loadPlayer(
+//                                                plugin.getServer().getOfflinePlayer(this.moderator.getOwner()))),
+//                                plugin.getServer().getOfflinePlayer((this.moderator.getOwner())).isOnline())
+//                        .getBukkitInventory());
+//               return this.inventory;
+//            }
+//        } catch (Exception e) {
+//            Util.debugLog(e.getMessage());
+//            return null;
+//        }
+//        InventoryHolder container;
+//        try {
+//            container = (InventoryHolder) state;
+//            this.inventory = new BukkitInventoryWrapper(container.getInventory());
+//            return this.inventory;
+//        } catch (Exception e) {
+//            if (!createBackup) {
+//                createBackup = Util.backupDatabase();
+//                if (createBackup) {
+//                    this.delete(false);
+//                }
+//            } else {
+//                this.delete(true);
+//            }
+//            plugin.logEvent(new ShopRemoveLog(Util.getNilUniqueId(), "Inventory Invalid", this.saveToInfoStorage()));
+//            Util.debugLog(
+//                    "Inventory doesn't exist anymore: " + this + " shop was removed.");
+//            return null;
+//        }
     }
 
     /**
@@ -1592,6 +1661,11 @@ public class ContainerShop implements Shop {
 
     @Override
     public ShopInfoStorage saveToInfoStorage() {
-        return new ShopInfoStorage(getLocation().getWorld().getName(), BlockPosition.of(getLocation()), SimpleShopModerator.serialize(getModerator()), getPrice(), Util.serialize(getItem()), isUnlimited() ? 1 : 0, getShopType().toID(), saveExtraToYaml(), getCurrency(), isDisableDisplay(), getTaxAccount());
+        return new ShopInfoStorage(getLocation().getWorld().getName(), BlockPosition.of(getLocation()), SimpleShopModerator.serialize(getModerator()), getPrice(), Util.serialize(getItem()), isUnlimited() ? 1 : 0, getShopType().toID(), saveExtraToYaml(), getCurrency(), isDisableDisplay(), getTaxAccount(),inventoryWrapperProvider,saveToSymbolLink());
+    }
+
+    @Override
+    public @NotNull String getInventoryWrapperProvider() {
+        return inventoryWrapperProvider;
     }
 }
