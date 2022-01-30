@@ -13,7 +13,7 @@
   "integrations-check-failed-create": "&cIntegração {0} negou a criação da loja",
   "integrations-check-failed-trade": "&cIntegração {0} negou a negociação da loja",
   "3rd-plugin-build-check-failed": "&c3rd plugin &l{0}&r&c negou as verificações de permissão, você configurou as permissões?",
-  "3rd-plugin-build-check-failed-admin": "&7(AdminOnly) &d{0} &8denied the permission checks, If this not excepted, try add &d{1} &7to listener blacklist. &7Configure Guide: https://github.com/PotatoCraft-Studio/QuickShop-Reremake/wiki/Use-protection-listener-filter",
+  "3rd-plugin-build-check-failed-admin": "&7(AdminOnly) &d{0} &8negou as verificações de permissão, se isto não for experado, tente adicionar &d{1} &7para os listeners restritos. &7Guia de Configuração: https://github.com/PotatoCraft-Studio/QuickShop-Reremake/wiki/Use-protection-listener-filter",
   "no-creative-break": "&cVocê não pode quebrar lojas de outros jogadores no modo criativo, mude para o modo sobrevivência ou tente usar a super-ferramenta {0}.",
   "trading-in-creative-mode-is-disabled": "&cVocê não pode negociar com a loja no modo criativo.",
   "supertool-is-disabled": "&cSuper-ferramenta foi desativada, não será possível quebrar nenhuma loja.",
@@ -360,6 +360,6 @@
   "purchase-out-of-stock": "&cEssa loja está sem itens no estoque, Chame o dono ou alguém da equipe caso for lojas de admin para re-estocar.",
   "purchase-out-of-space": "&cEssa loja está cheia, Chame o dono ou alguém da equipe caso for loja de admin para limpar.",
   "safe-mode": "&cQuickShop agora está em modo seguro, você não pode abrir esta loja, por favor entre em contato com o administrador do servidor para corrigir os erros.",
-  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode-admin": "&c&lAVISO: &cO QuickShop neste servidor agora rodando em modo seguro, nenhum recurso funcionará, por favor digite o comando &e/qs &c para verificar quaisquer erros.",
+  "internal-error": "&cUm erro interno ocorreu, os detalhes foram registrados no Console. Por favor tente novamente e contate o administrador do servidor se ainda existir."
 }
