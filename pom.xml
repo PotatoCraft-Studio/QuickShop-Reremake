@@ -714,7 +714,7 @@
         <dependency>
             <groupId>com.plotsquared</groupId>
             <artifactId>PlotSquared-Core</artifactId>
-            <version>6.4.0</version>
+            <version>6.5.0</version>
             <scope>provided</scope>
             <!--We just need the core jar-->
             <exclusions>
