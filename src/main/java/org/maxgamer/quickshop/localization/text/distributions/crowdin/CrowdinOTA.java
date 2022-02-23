@@ -88,8 +88,8 @@ public class CrowdinOTA implements Distribution {
      */
     public Map<String, String> genLanguageMapping() {
         Map<String, String> mapping = new HashMap<>();
-        JsonElement element = JsonParser.parseString(getManifestJson());
-        for (Map.Entry<String, JsonElement> set : element.getAsJsonObject().getAsJsonObject("language_mapping").entrySet()) {
+        JsonElement parser = new JsonParser().parse(getManifestJson());
+        for (Map.Entry<String, JsonElement> set : parser.getAsJsonObject().getAsJsonObject("language_mapping").entrySet()) {
             if (!set.getValue().isJsonObject()) {
                 continue;
             }

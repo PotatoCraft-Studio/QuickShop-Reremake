@@ -26,6 +26,7 @@ import org.maxgamer.quickshop.util.reload.Reloadable;
 
 public abstract class AbstractQSListener implements Listener, Reloadable {
     protected final QuickShop plugin;
+    private boolean isRegistered = false;
 
     public AbstractQSListener(QuickShop plugin) {
         this.plugin = plugin;
@@ -33,10 +34,13 @@ public abstract class AbstractQSListener implements Listener, Reloadable {
     }
 
     public void register() {
+        if (isRegistered) return;
+        isRegistered = true;
         plugin.getServer().getPluginManager().registerEvents(this, plugin);
     }
 
     public void unregister() {
         HandlerList.unregisterAll(this);
     }
+
 }
