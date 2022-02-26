@@ -57,7 +57,7 @@ public class FabledIntegration extends AbstractQSIntegratedPlugin {
         this.islandRoleList = new ArrayList<>();
         for (String roleStr : plugin.getConfig().getStringList("integration.fabledskyblock.create")) {
             try {
-                IslandRole role = IslandRole.valueOf(roleStr.toLowerCase(Locale.ROOT));
+                IslandRole role = IslandRole.valueOf(roleStr.toUpperCase(Locale.ENGLISH));
                 this.islandRoleList.add(role);
             }catch (IllegalArgumentException e){
                 plugin.getLogger().warning("Invalid FabledSkyBlock setting role in config: " + roleStr);
