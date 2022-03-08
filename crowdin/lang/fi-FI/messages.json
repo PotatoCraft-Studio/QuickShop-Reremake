@@ -25,7 +25,7 @@
   "price-too-cheap": "&cHinnan pitää olla korkeampi kuin &e${0}",
   "no-price-change": "&cTuo ei vaihtaisi kaupan hintaa!",
   "you-cant-afford-a-new-shop": "&cKaupan luominen maksaa {0}.",
-  "player-bought-from-your-store-tax": "&c{0} osti {1} {2} kaupastasi ja sait siitä {3} ({4} verot).",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&cHinnan vaihtaminen maksaa {0}.",
   "success-created-shop": "&cKauppa luotu.",
   "success-removed-shop": "&aKauppa poistettu.",
@@ -38,7 +38,7 @@
   "not-a-number": "&cVoit ainoastaan antaa numeroita, kirjoitit {0}.",
   "exceeded-maximum": "&cArvo ylitti Javan enimmäisarvon.",
   "not-a-integer": "&cVoit ainoastaan antaa kokonaislukuja, kirjoitit {0}.",
-  "player-bought-from-your-store": "&c{0} osti {1} {2} kaupastasi ja sait siitä {3}.",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&5Kaupastasi koordinaateissa {0}, {1}, {2} on loppunut {3}!",
   "shop-has-no-space": "&cKaupassa on {1} paikkaa tuotteelle {0}.",
   "you-dont-have-that-many-items": "&cSinulla on vain {0} {1}.",
@@ -361,6 +361,5 @@
   "purchase-out-of-stock": "&cThis shop run out of the stock, Contact shop owner or staffs to refill the stock.",
   "purchase-out-of-space": "&cThis shop run out of the space, Contact shop owner or staffs to empty the shop.",
   "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
-  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
 }

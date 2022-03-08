@@ -25,7 +25,7 @@
   "price-too-cheap": "&cAz árnak minimum &e${0} &c-nak/nek kell lennie!",
   "no-price-change": "&cNem változott az ár!",
   "you-cant-afford-a-new-shop": "&cNem tudsz új boltot csinálni, mert túl kevés pénzed van! Ára: &e${0}",
-  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} from your shop, and you earned {3} ({4} in taxes).",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&c{0} -ba kerül az áralakítás.",
   "success-created-shop": "&aSikeresen elkészítettél egy boltot!",
   "success-removed-shop": "&aKitörölted a boltodat!",
@@ -38,7 +38,7 @@
   "not-a-number": "&cEnnek egy számnak kell lennie! &7&o({0})",
   "exceeded-maximum": "&cThe value exceeded the maximum value in Java.",
   "not-a-integer": "&cYou must input a integer, your input was {0}.",
-  "player-bought-from-your-store": "&c{0} purchased {1} {2} from your shop, and you earned {3}.",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&5&l!!! &dA boldot itt: &f{0}&d, &f{1}&d, &f{2}&d, kifogyott ebből: &f{3}",
   "shop-has-no-space": "&cThe shop only has room for {0} more {1}.",
   "you-dont-have-that-many-items": "&cNincs elég tárgyad: &7{0} {1}.",
@@ -361,6 +361,5 @@
   "purchase-out-of-stock": "&cNincs több item készleten, Egyesztess a bolt tulajdonosával.",
   "purchase-out-of-space": "&cNincs több item készleten, Egyeztess a bolt tulajdonosával.",
   "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
-  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
 }

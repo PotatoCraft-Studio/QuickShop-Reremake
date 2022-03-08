@@ -17,7 +17,7 @@
   "no-creative-break": "&cDu kan ikke ødelegge andre spillere sine butikker i kreativ modus. Bytt til overlevelsesmodus eller prøv å bruke superverktøyet {0} i stedet.",
   "trading-in-creative-mode-is-disabled": "&cDu kan ikke handle med denne butikken mens du er i kreativ modus.",
   "supertool-is-disabled": "&cSuperverktøyet er deaktivert. Kan ikke ødelegge butikker.",
-  "disabled-in-this-world": "&cQuickShop is disabled in this world",
+  "disabled-in-this-world": "&cQuickShop er deaktivert i denne verdenen",
   "no-double-chests": "&cDu kan ikke opprette en butikk med dobbelkiste.",
   "not-managed-shop": "&cDu er ikke eieren eller moderator for denne butikken",
   "shop-already-owned": "&cDette er allerede en butikk.",
@@ -25,7 +25,7 @@
   "price-too-cheap": "&cPrisen må være høyere enn &e${0}",
   "no-price-change": "&cDette ville ikke resultere i en prisendring!",
   "you-cant-afford-a-new-shop": "&cDet koster {0} å opprette en ny butikk.",
-  "player-bought-from-your-store-tax": "&c{0} kjøpte {1} {2} fra butikken din og du tjente {3} ({4} i skatter).",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&cDet koster {0} å endre prisen i butikken.",
   "success-created-shop": "&cButikk er opprettet.",
   "success-removed-shop": "&aButikken ble fjernet.",
@@ -38,7 +38,7 @@
   "not-a-number": "&cDu kan bare angi et nummer, du skrev {0}.",
   "exceeded-maximum": "&cVerdien overskrider maksimumsverdien i Java.",
   "not-a-integer": "&cDu kan bare angi et nummer, du skrev {0}.",
-  "player-bought-from-your-store": "&c{0} kjøpte {1} {2} fra butikken din, og du tjente {3}.",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&5Butikken din på lokasjon {0}, {1}, {2} har gått tom for {3}!",
   "shop-has-no-space": "&cButikken har kun plass til {0} stykker til av {1}.",
   "you-dont-have-that-many-items": "&cDu har bare {0} {1}.",
@@ -361,6 +361,5 @@
   "purchase-out-of-stock": "&cDenne butikken er tom på lager, kontakt butikkeier eller ansatte for å fylle på lageret.",
   "purchase-out-of-space": "&cDenne butikken er tom for plass, kontakt butikkeier eller ansatte for å tømme butikken.",
   "safe-mode": "&cQuickShop er nå i sikkerhetsmodus, du kan derfor ikke åpne denne butikkbeholderen. Ta kontakt med serveradministrator for å fikse feilene.",
-  "safe-mode-admin": "&c&lADVARSEL: &cQuickShop på denne serveren kjører nå i sikkerhetsmodus, ingen funksjoner vil fungere. Vennligst skriv inn &e/qs &ckommando for å sjekke eventuelle feil.",
-  "internal-error": "&cDet har oppstått en intern feil, se detaljene i loggen/konsollen. Vennligst prøv igjen, og kontakt en serveradministrator hvis det fortsatt oppstår feil."
+  "safe-mode-admin": "&c&lADVARSEL: &cQuickShop på denne serveren kjører nå i sikkerhetsmodus, ingen funksjoner vil fungere. Vennligst skriv inn &e/qs &ckommando for å sjekke eventuelle feil."
 }

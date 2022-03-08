@@ -1,7 +1,7 @@
 {
   "_comment": "Ahoj překladateli! Pokud toto upravuješ z Githubu nebo ze zdrojového kódu, měl bys mrknout na https://crowdin.com/project/quickshop-reremake",
   "file-test": "Toto je zkušební textový soubor. Používáme jej k testování, pokud jde o zprávy json je rozbitý. Můžete jej vyplnit jakýmkoliv východním vejci, které se vám zde líbí :)",
-  "translation-author": "Translator: Ghost_chu, Andre_601",
+  "translation-author": "Translator: Ghost_chu, Andre_601, LixCisCZ",
   "translation-version": "Podpora verze: Reremake",
   "translation-contributors": "Přispěli: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Jazyková Zóna: Czech (cs_CZ)",
@@ -25,7 +25,7 @@
   "price-too-cheap": "&cCena musí být větší než &e${0}",
   "no-price-change": "&cToto nezmění cenu!",
   "you-cant-afford-a-new-shop": "&cCena založení nového obchodu je {0}.",
-  "player-bought-from-your-store-tax": "&c{0} zakoupen {1} {2} z tvého obchodu a ty jsi zaplatil {3} na daních).",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&cCena za změnu ceny ve tvém obchodě je {0}.",
   "success-created-shop": "&cObchod vytvořen.",
   "success-removed-shop": "&aObchod odstraněn.",
@@ -38,7 +38,7 @@
   "not-a-number": "&cMůžete zadat pouze číslo, váš vstup byl {0}.",
   "exceeded-maximum": "&cHodnota překročila maximální hodnotu v Javě.",
   "not-a-integer": "&b▪&8▏ &bSystem &8› &cMužeš zadat pouze celé číslo, zadal jsi {0}.",
-  "player-bought-from-your-store": "&b▪&8▏ &bSystem &8› &7{0} zakoupil {1} {2} z tvého obchodu a ty jsi zaplatil {3} na daních.",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&b▪&8▏ &bSystem &8› &7Váš obchod v {0}, {1}, {2}, vyčerpal {3}!",
   "shop-has-no-space": "&b▪&8▏ &bSystem &8› &cObchod má pouze místo pro {0} více {1}.",
   "you-dont-have-that-many-items": "&b▪&8▏ &bSystem &8› &cMáš pouze {0} {1}.",
@@ -361,6 +361,5 @@
   "purchase-out-of-stock": "&cTumuto obchodu došli zásoby, kontaktujte majitele obchodu pro doplňování zásob.",
   "purchase-out-of-space": "&cTomuto obchodu došlo místo, Kontaktuj jeho majitele aby ho vyprázdnil.",
   "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
-  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
 }

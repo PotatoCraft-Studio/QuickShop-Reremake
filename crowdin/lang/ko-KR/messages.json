@@ -25,7 +25,7 @@
   "price-too-cheap": "&c가격은 반드시 &e${0} 원 &c보다 높아야만 합니다.",
   "no-price-change": "&c입력한 금액이 이전 가격과 똑같습니다. 금액을 변경 하려면 다른 금액을 입력해주세요.",
   "you-cant-afford-a-new-shop": "&c새 상점 생성에 {0} 원이 소모됩니다!",
-  "player-bought-from-your-store-tax": "&c{0} 님이 상점 에서 {2} 을(를) {1}개 구입했으며 {3} 원 을(를) 얻으셨습니다! (세금 : {4}원)",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&c상점 물품의 가격을 변경할때 {0} 원이 소모됩니다.",
   "success-created-shop": "&c상점이 생성되었습니다.",
   "success-removed-shop": "&a상점을 제거했습니다.",
@@ -38,7 +38,7 @@
   "not-a-number": "&c당신은 숫자만 입력해야하지만 {0} 을(를) 입력하였습니다.",
   "exceeded-maximum": "&c자바에서 허용하는 최대 값을 초과했습니다.",
   "not-a-integer": "&c당신은 숫자만 입력해야하지만 {0} 을(를) 입력하였습니다.",
-  "player-bought-from-your-store": "&c{0} 님이 당신의 상점 에서 {1} {2} 을(를) 구입했으며 당신은 {3} 원 을(를) 얻으셨습니다!",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&5{0}, {1}, {2} 에 있는 당신의 가게의 물품 {3} 이 (가) 부족합니다.",
   "shop-has-no-space": "&c{1} 의 공간은  {0} 칸만 있습니다.",
   "you-dont-have-that-many-items": "&c{1} 개를 판매하기엔 갯수가 모자랍니다. 소유중 갯수 {0}",
@@ -361,6 +361,5 @@
   "purchase-out-of-stock": "&c이 상점은 재고가 다 떨어졌으니 주인에게 문의하여 재고보충을 요구해주세요.",
   "purchase-out-of-space": "&c이 상점은 공간이 부족하니 주인에게 문의하여 상자를 비우라고 요청해주세요.",
   "safe-mode": "이 서버의 QuickShop은 현재 안전 모드로 실행 중이므로 기능이 작동하지 않습니다. 오류를 확인하려면 관리자에게 연락하세요",
-  "safe-mode-admin": "&c&l경고: &c이 서버의 QuickShop은 현재 안전 모드로 실행 중이므로 기능이 작동하지 않습니다. 오류를 확인하려면 &e/qs &c 명령을 입력하십시오.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode-admin": "&c&l경고: &c이 서버의 QuickShop은 현재 안전 모드로 실행 중이므로 기능이 작동하지 않습니다. 오류를 확인하려면 &e/qs &c 명령을 입력하십시오."
 }

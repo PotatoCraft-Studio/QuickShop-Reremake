@@ -13,11 +13,11 @@
   "integrations-check-failed-create": "&c{0} 統合がショップの作成を拒否しました",
   "integrations-check-failed-trade": "&c{0} 統合がショップの取引を拒否しました",
   "3rd-plugin-build-check-failed": "&cサードパーティプラグイン &l{0}&r&c が権限チェックを拒否しました。そこに権限を設定していませんか？",
-  "3rd-plugin-build-check-failed-admin": "&7(AdminOnly) &d{0} &8denied the permission checks, If this not excepted, try add &d{1} &7to listener blacklist. &7Configure Guide: https://github.com/PotatoCraft-Studio/QuickShop-Reremake/wiki/Use-protection-listener-filter",
+  "3rd-plugin-build-check-failed-admin": "&7(管理者のみ) &d{0} &8が権限チェックを拒否しました。このチェックを除外しない場合は、&d{1} &7をリスナーブラックリストに追加してみてください。 &7設定ガイド: https://github.com/PotatoCraft-Studio/QuickShop-Reelemake/wiki/Use-protection-listener-filter",
   "no-creative-break": "&cクリエイティブモードでは他のプレイヤーのショップを破壊することはできません。サバイバルモードに切り替えるか、代わりにスーパーツール {0} を使用してください。",
   "trading-in-creative-mode-is-disabled": "&cクリエイティブモードではこのショップと取引することはできません。",
   "supertool-is-disabled": "&cスーパーツールが無効になっています。どのショップも破壊することはできません。",
-  "disabled-in-this-world": "&cQuickShop is disabled in this world",
+  "disabled-in-this-world": "&cこのワールドではクイックショップが無効になっています",
   "no-double-chests": "&cラージチェストのショップを作成することはできません。",
   "not-managed-shop": "あなたはショップの店主でもモデレーターでもありません。",
   "shop-already-owned": "&cこれはすでにショップです。",
@@ -25,7 +25,7 @@
   "price-too-cheap": "&c価格は&e${0}&c以上である必要があります。",
   "no-price-change": "&cこれでは価格変更になりません！",
   "you-cant-afford-a-new-shop": "&c新しいショップを作成するには {0} かかります。",
-  "player-bought-from-your-store-tax": "&c{0} が {1} 個の {2} をあなたのショップから購入したので {3} を獲得しました。(うち消費税 {4})",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&cショップの価格を変更するには {0} かかります。",
   "success-created-shop": "&cショップが作成されました。",
   "success-removed-shop": "&aショップを削除しました。",
@@ -38,7 +38,7 @@
   "not-a-number": "&c数字しか入力出来ません。あなたの入力は {0} でした。",
   "exceeded-maximum": "この値はJavaの最大値を越えました",
   "not-a-integer": "数字しか入力できません。あなたが入力したのは {0} でした",
-  "player-bought-from-your-store": "&c{0} が {1} 個の {2} をあなたのショップから購入したので {3} を獲得しました。",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&5{0}、{1}、{2} のショップで {3} の在庫がなくなりました！",
   "shop-has-no-space": "&cショップには {0} 個以上 {1} 個分のスペースしかありません",
   "you-dont-have-that-many-items": "&c{1} を {0} 個 しか持っていません。",
@@ -98,7 +98,7 @@
     "owner": "&a店主: {0}",
     "item": "&aアイテム : &e{0}",
     "item-holochat-error": "&c[Error]",
-    "item-holochat-data-too-large": "&c[Error] Item NBT is too large for showing",
+    "item-holochat-data-too-large": "&c[Error] NBT が大きすぎるため、表示できません。",
     "preview": "&b[アイテムプレビュー]",
     "space": "&a空き: &e{0}",
     "stock": "&a在庫: &e{0}",
@@ -126,8 +126,8 @@
       "limited": "&aショップは制限されています"
     },
     "toggle-always-counting": {
-      "counting": "&aShop is now always counting container even is unlimited",
-      "not-counting": "&aShop is now respect if shop is unlimited"
+      "counting": "&aショップは常にコンテナをカウントします。無制限です。",
+      "not-counting": "&aショップが無制限の場合、ショップはリスペクトされます"
     },
     "transfer-success": "&e{0} のショップを &e{1} に転送しました",
     "transfer-success-other": "&a{0} {1}&aのショップを&e{2} に転送しました",
@@ -151,7 +151,7 @@
     "now-nolonger-debuging": "&a開発者モードを無効化しました。QuickShopをリロードしています。",
     "wrong-args": "&c無効な引数です。コマンドを&l/qs help &rで確認して下さい。",
     "description": {
-      "alwayscounting": "&eSet if shop always counting container even is unlimited",
+      "alwayscounting": "&e常時コンテナをカウントするかどうかを設定する",
       "title": "&aQuickShop ヘルプ",
       "unlimited": "&eショップに無制限の在庫を与えます",
       "setowner": "&eショップの所有権を変更します",
@@ -211,8 +211,8 @@
     "freeze": "取引が無効化されました。"
   },
   "controlpanel": {
-    "alwayscounting": "&aAlways counting: {0} &e[&d&lChange&e]",
-    "alwayscounting-hover": "&eClick to toggle if the shop is always counting container.",
+    "alwayscounting": "&a常にカウント: {0} &e[&d&lChange&e]",
+    "alwayscounting-hover": "&eショップが常にコンテナをカウントしているかどうかを切り替えます。",
     "setowner": "&a店主: &b{0} &e[&d&l変更&e]",
     "infomation": "&aショップコントロールパネル:",
     "setowner-hover": "&eクリックで店主を変更します",
@@ -282,7 +282,7 @@
       "どう思う？{0} がリリースされました！更新しよう！",
       "ドクター！QuickShopに新しいアップデート {0} がやってきました！アップデートした方がいいですよ～",
       "こ～こ～だ～よ～！QuickShopに新しいアップデート {0} があるよ～",
-      "Paimon want told you the QuickShop have new update {0}!"
+      "Paimonはクイックショップに新しいアップデート {0} があると言っています！"
     ],
     "remote-disable-warning": "&cこのバージョンのQuickShopは、リモートサーバーによって無効とマークされており、このバージョンには深刻な問題がある可能性があります。{0}. この警告は安定したバージョンに切り替えるまで表示され続けますが、サーバーのパフォーマンスに影響を与えることはありません。",
     "label": {
@@ -360,7 +360,6 @@
   "shop-purged-start": "&aショップパージを開始しました。コンソールを確認してください。",
   "purchase-out-of-stock": "&cこのショップは在庫がなくなりました。店主またはショップスタッフにお問い合わせください。",
   "purchase-out-of-space": "&cこのショップは空き容量がありません。店主またはショップスタッフにお問い合わせください。",
-  "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
-  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode": "&cクイックショップはセーフモードです。このショップのコンテナを開くことができません。エラーを修正するにはサーバー管理者に問い合わせてください。",
+  "safe-mode-admin": "&c&lWARNING: &cこのサーバーのクイックショップは現在安全モードで動作していますが、機能は動作しません。エラーをチェックするには&e/qs &cコマンドを入力してください。"
 }

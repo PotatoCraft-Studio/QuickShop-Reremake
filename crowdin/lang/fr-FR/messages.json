@@ -13,7 +13,7 @@
   "integrations-check-failed-create": "&cIntégration {0} à refusé la création de la boutique",
   "integrations-check-failed-trade": "&cIntégration {0} à refusé la création de la boutique",
   "3rd-plugin-build-check-failed": "Un plugin tiers &l{0}&r&c a refusé les vérifications de permission, avez-vous les droits pour paramétrer ici ?",
-  "3rd-plugin-build-check-failed-admin": "&7(AdminOnly) &d{0} &8denied the permission checks, If this not excepted, try add &d{1} &7to listener blacklist. &7Configure Guide: https://github.com/PotatoCraft-Studio/QuickShop-Reremake/wiki/Use-protection-listener-filter",
+  "3rd-plugin-build-check-failed-admin": "{0} {1}",
   "no-creative-break": "&cVous ne pouvez pas détruire les boutiques des autres joueurs en mode créatif, basculez en mode survie ou essayez d'utiliser le super-outil {0} à la place.",
   "trading-in-creative-mode-is-disabled": "&cVous ne pouvez pas utiliser une boutique en mode créatif.",
   "supertool-is-disabled": "&cLe super-outil est désactivé, impossible de détruire une boutique avec.",
@@ -25,7 +25,7 @@
   "price-too-cheap": "&cLe prix doit être supérieur à &e${0}",
   "no-price-change": "&cLe prix ne changera pas!",
   "you-cant-afford-a-new-shop": "&cLa création d'une boutique coûte {0}.",
-  "player-bought-from-your-store-tax": "&c{0} a acheté {1} {2} dans ta boutique, et tu as reçu ou payé {3} ({4} de taxes).",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&cCela coûte {0} de changer le prix de ta boutique.",
   "success-created-shop": "&cBoutique crée avec succès.",
   "success-removed-shop": "&aBoutique supprimée avec succès.",
@@ -38,7 +38,7 @@
   "not-a-number": "&cVous ne pouvez saisir qu'un nombre, votre entrée était {0}.",
   "exceeded-maximum": "&cLa valeur maximal à ne pas dépasser en Java.",
   "not-a-integer": "&cVous devez entrer un nombre entier, votre entrée était {0}.",
-  "player-bought-from-your-store": "&c{0} a acheté {1} {2} dans ta boutique, et tu as reçu ou payé {3} ( de taxes.",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&5Votre boutique aux coordonnées {0}, {1}, {2}, est à court de {3}!",
   "shop-has-no-space": "&cCette boutique n'a de la place que pour {0} de plus {1}.",
   "you-dont-have-that-many-items": "&cVous ne possédez que {0} {1} dans votre inventaire.",
@@ -194,11 +194,11 @@
     "feature-not-enabled": "Cette fonctionnalité n'est pas activée dans le fichier de configuration."
   },
   "signs": {
-    "selling": "Vendre : {0}",
-    "stack-selling": "Vendre : {0}",
+    "selling": "Racheter : {0}",
+    "stack-selling": "Racheter : {0}",
     "header": "{1}{0}",
-    "buying": "Acheter {0}",
-    "stack-buying": "Acheter {0}",
+    "buying": "Revendre {0}",
+    "stack-buying": "Revendre {0}",
     "item-left": "",
     "item-right": "",
     "price": "{0} l'unité",
@@ -361,6 +361,5 @@
   "purchase-out-of-stock": "&cCette boutique est en rupture de stock, contactez le propriétaire ou le personnel de la boutique pour recharger le stock.",
   "purchase-out-of-space": "&cCette boutique est à court d'espace, contactez le propriétaire ou le personnel de la boutique pour vider la boutique.",
   "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
-  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
 }

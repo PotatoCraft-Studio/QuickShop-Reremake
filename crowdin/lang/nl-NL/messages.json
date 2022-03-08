@@ -25,7 +25,7 @@
   "price-too-cheap": "&cPrice moet groter zijn dan &e${0}",
   "no-price-change": "&cDit zou geen prijswijziging tot gevolg hebben!",
   "you-cant-afford-a-new-shop": "&cHet maken van een nieuwe winkel kost {0}.",
-  "player-bought-from-your-store-tax": "&c{0} kocht {1} {2} in uw winkel, en u hebt {3} ({4} aan belastingen verdiend).",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&cHet kost {0} om de prijs in uw winkel te wijzigen.",
   "success-created-shop": "&cShop aangemaakt.",
   "success-removed-shop": "&aWinkel verwijderd.",
@@ -38,7 +38,7 @@
   "not-a-number": "&cU kunt alleen een nummer invoeren, uw invoer was {0}.",
   "exceeded-maximum": "&cDe waarde overschrijdt de maximale waarde in Java.",
   "not-a-integer": "&cU moet een nummer invoeren, uw invoer was {0}.",
-  "player-bought-from-your-store": "&c{0} heeft {1} {2} gekocht van uw winkel, en u heeft {3} verdiend.",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&5Uw winkel op {0}, {1}, {2} heeft geen {3} meer!",
   "shop-has-no-space": "&cDe winkel heeft alleen ruimte voor {0} {1} meer.",
   "you-dont-have-that-many-items": "&cJe hebt slechts {0} {1}.",
@@ -361,6 +361,5 @@
   "purchase-out-of-stock": "&cThis shop run out of the stock, Contact shop owner or staffs to refill the stock.",
   "purchase-out-of-space": "&cThis shop run out of the space, Contact shop owner or staffs to empty the shop.",
   "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
-  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
 }

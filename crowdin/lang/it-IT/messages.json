@@ -25,7 +25,7 @@
   "price-too-cheap": "&cIl prezzo deve essere superiore di &e ${0}",
   "no-price-change": "&cQuesto non comporterebbe una variazione di prezzo!",
   "you-cant-afford-a-new-shop": "&cIl prezzo per creare un nuovo negozio è di {0}.",
-  "player-bought-from-your-store-tax": "&c{0} ha acquistato {1} {2} dal tuo negozio, e hai guadagnato {3} ({4} in tasse).",
+  "player-bought-from-your-store-tax": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3} ({4} in taxes).",
   "you-cant-afford-to-change-price": "&cQuesto costa {0} per cambiare il prezzo nel tuo negozio.",
   "success-created-shop": "&cNegozio creato.",
   "success-removed-shop": "&cNegozio rimosso",
@@ -38,7 +38,7 @@
   "not-a-number": "&cPuoi inserire solo un numero, il tuo input era {0}.",
   "exceeded-maximum": "&cIl valore ha superato il valore massimo in Java.",
   "not-a-integer": "&cDevi inserire un numero intero, il tuo inserimento era {0}.",
-  "player-bought-from-your-store": "&c{0} ha acquistato {1} {2} dal tuo negozio, e hai guadagnato {3}.",
+  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
   "shop-out-of-stock": "&5Il tuo negozio in {0}, {1}, {2} è esaurito {3}!",
   "shop-has-no-space": "&cIl negozio ha spazio solo per {0} in più {1}.",
   "you-dont-have-that-many-items": "&cHai solo {0}{1}.",
@@ -361,6 +361,5 @@
   "purchase-out-of-stock": "&cQuesto negozio ha esaurito le scorte, contatta il proprietario del negozio o il personale per rifornire le scorte.",
   "purchase-out-of-space": "&cQuesto negozio ha esaurito lo spazio, contatta il proprietario del negozio o il personale per svuotare il negozio.",
   "safe-mode": "&cQuickShop ora in modalità provvisoria, non puoi aprire questo contenitore del negozio, contatta l'amministratore del server per correggere gli errori.",
-  "safe-mode-admin": "&c&lATTENZIONE: &cIl QuickShop su questo server ora funziona in modalità provvisoria, nessuna funzione funzionerà, per favore digita il comando &e/qs &c per controllare eventuali errori.",
-  "internal-error": "&cAn internal error has occurred, the details has been logged in Console. Please try again and contact the server administrator if still exists."
+  "safe-mode-admin": "&c&lATTENZIONE: &cIl QuickShop su questo server ora funziona in modalità provvisoria, nessuna funzione funzionerà, per favore digita il comando &e/qs &c per controllare eventuali errori."
 }
