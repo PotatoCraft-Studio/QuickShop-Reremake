@@ -785,68 +785,11 @@ public class QuickShop extends JavaPlugin implements QuickShopAPI {
         // Check If we need kill the server or disable plugin
 
         switch (resultReport.getFinalResult()) {
-            case DISABLE_PLUGIN:
-                Bukkit.getPluginManager().disablePlugin(this);
-                break;
-            case STOP_WORKING:
-                setupBootError(new BootError(this.getLogger(), joiner.toString()), true);
-                PluginCommand command = getCommand("qs");
-                if (command != null) {
-                    Util.mainThreadRun(() -> command.setTabCompleter(this)); //Disable tab completer
-                }
-                break;
-            case KILL_SERVER:
-                getLogger().severe("[Security Risk Detected] QuickShop forcing crash the server for security, contact the developer for details.");
-                String result = environmentChecker.getReportMaker().bake();
-                File reportFile = writeSecurityReportToFile();
-                URI uri = null;
-                if (reportFile != null) {
-                    uri = reportFile.toURI();
-                }
-                if (uri != null) {
-                    getLogger().warning("[Security Risk Detected] To get more details, please check: " + uri);
-                    try {
-                        if (java.awt.Desktop.isDesktopSupported()) {
-                            java.awt.Desktop dp = java.awt.Desktop.getDesktop();
-                            if (dp.isSupported(java.awt.Desktop.Action.BROWSE)) {
-                                dp.browse(uri);
-                                getLogger().warning("[Security Risk Detected] A browser already open for you. ");
-                            }
-                        }
-                    } catch (Throwable ignored) {
-                        //If failed, write directly to console
-                        getLogger().severe(result);
-                    }
-                } else {
-                    //If write failed, write directly to console
-                    getLogger().severe(result);
-                }
-                //Wait for a while for user and logger outputting
-                try {
-                    //10 seconds
-                    Thread.yield();
-                    Thread.sleep(10000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                // Halt the process, kill the server
-                Runtime.getRuntime().halt(-1);
+
             default:
                 break;
         }
         testing = false;
-    }
-
-    private File writeSecurityReportToFile() {
-        File file = new File(getDataFolder(), UUID.randomUUID() + ".security.letter.txt");
-        try {
-            Files.write(new File(getDataFolder(), UUID.randomUUID() + ".security.letter.txt").toPath(), environmentChecker.getReportMaker().bake().getBytes(StandardCharsets.UTF_8));
-            file = file.getCanonicalFile();
-        } catch (IOException e) {
-            getLogger().log(Level.SEVERE, "Failed to write security report!", e);
-            return null;
-        }
-        return file;
     }
 
     @Override

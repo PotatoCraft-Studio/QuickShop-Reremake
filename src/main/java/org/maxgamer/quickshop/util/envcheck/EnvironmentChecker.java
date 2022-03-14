@@ -44,8 +44,8 @@ import java.util.zip.ZipFile;
 public final class EnvironmentChecker {
     private final QuickShop plugin;
     private final List<Method> tests = new ArrayList<>();
-    @Getter
-    private final SecurityReport reportMaker = new SecurityReport();
+    //@Getter
+    //private final SecurityReport reportMaker = new SecurityReport();
 
     public EnvironmentChecker(QuickShop plugin) {
         this.plugin = plugin;
@@ -193,13 +193,13 @@ public final class EnvironmentChecker {
                  InputStream stream3 = loader.getResourceAsStream("META-INF/SELFSIGN.SF")) {
                 if (stream1 == null || stream2 == null || stream3 == null) {
                     if(stream1 == null){
-                        this.reportMaker.signatureFileMissing("META-INF/MANIFEST.MF");
+                        //this.reportMaker.signatureFileMissing("META-INF/MANIFEST.MF");
                     }
                     if(stream2 == null){
-                        this.reportMaker.signatureFileMissing("META-INF/SELFSIGN.DSA");
+                        //this.reportMaker.signatureFileMissing("META-INF/SELFSIGN.DSA");
                     }
                     if(stream3 == null){
-                        this.reportMaker.signatureFileMissing("META-INF/SELFSIGN.SF");
+                        //this.reportMaker.signatureFileMissing("META-INF/SELFSIGN.SF");
                     }
                     plugin.getLogger().warning("The signature could not be found! The QuickShop jar has been modified or you're running a custom build.");
                     return new ResultContainer(CheckResult.KILL_SERVER, "Security risk detected, QuickShop jar has been modified.");
@@ -214,7 +214,7 @@ public final class EnvironmentChecker {
                 return new ResultContainer(CheckResult.PASSED, "The jar is valid. No issues detected.");
             } else {
                 modifiedEntry.forEach(jarEntry -> {
-                    this.reportMaker.signatureVerifyFail(jarEntry);
+                    //this.reportMaker.signatureVerifyFail(jarEntry);
                     plugin.getLogger().warning(">> Modified Class Detected <<");
                     plugin.getLogger().warning("Name: " + jarEntry.getName());
                     plugin.getLogger().warning("CRC: " + jarEntry.getCrc());
@@ -243,7 +243,7 @@ public final class EnvironmentChecker {
     public ResultContainer manifestCheck() {
         String mainClass = plugin.getDescription().getMain();
         if(!mainClass.equals("org.maxgamer.quickshop.QuickShop")){
-            this.reportMaker.manifestModified(plugin.getDescription());
+            //this.reportMaker.manifestModified(plugin.getDescription());
             plugin.getLogger().warning("ALERT: Detected main class has been modified!");
             plugin.getLogger().warning("Should be: org.maxgamer.quickshop.QuickShop");
             plugin.getLogger().warning("Actually: "+mainClass);
@@ -266,7 +266,7 @@ public final class EnvironmentChecker {
                 ZipEntry entry = zipEntryEnumeration.nextElement();
                 if(entry.getName().startsWith("javassist") || entry.getName().startsWith(".")){
                     found = true;
-                    this.reportMaker.potentialInfected(entry);
+                    //this.reportMaker.potentialInfected(entry);
                     plugin.getLogger().log(Level.WARNING, "Potential Infection Detected:");
                     plugin.getLogger().log(Level.WARNING, "File: "+entry.getName());
                     plugin.getLogger().log(Level.WARNING, "CRC: "+entry.getCrc());

@@ -293,30 +293,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jarsigner-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <phase>${mvn.sign.phrase}</phase>
-                        <id>sign</id>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <archive>${project.basedir}/target/${artifactId}.jar</archive>
-                    <keystore>${project.basedir}/keystore.jks</keystore>
-                    <alias>selfsigned</alias>
-                    <!--suppress UnresolvedMavenProperty -->
-                    <storepass>${env.quickshop-signer-pwd}</storepass>
-                    <!--suppress UnresolvedMavenProperty -->
-                    <keypass>${env.quickshop-signer-pwd}</keypass>
-                </configuration>
-            </plugin>
         </plugins>
         <resources>
             <resource>
