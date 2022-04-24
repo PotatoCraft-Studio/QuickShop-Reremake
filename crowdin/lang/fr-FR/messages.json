@@ -1,9 +1,9 @@
 {
-  "_comment": "Bonjour traducteur! Si vous éditez ceci à partir de Github ou à partir de sources de code, vous devriez aller sur https://crowdin.com/project/quickshop-reremake",
-  "file-test": "Ceci est un fichier texte de test. Nous l'utilisons pour tester si les messages sont cassé. Vous pouvez le remplir avec n'importe quel \"easter eggs\" que vous aimez ici :)",
+  "_comment": "Bonjour traducteur! Si vous éditez ceci à partir de Github ou à partir du code source, vous devriez aller sur https://crowdin.com/project/quickshop-reremake",
+  "file-test": "Ceci est un fichier texte de test. Nous l'utilisons pour tester si les messages sont cassés. Vous pouvez le remplir avec n'importe quel \"easter eggs\" que vous aimez ici :)",
   "translation-author": "&cYou only have room for {0} more",
   "translation-version": "Version suportée: Reremake",
-  "translation-contributors": "Contributeurs : Timtower, Netherfoam, KaiNoMood, Mgazul, JackThePicken, Andre_601 et brunopaiva15, HiiRaZ",
+  "translation-contributors": "Contributeurs : Timtower, Netherfoam, KaiNoMood, Mgazul, JackThePicken, Andre_601, brunopaiva15, HiiRaZ, WAXIE",
   "translation-country": "Langue: Français (fr_FR)",
   "language-version": "63",
   "not-looking-at-valid-shop-block": "&cImpossible de trouver un bloc pour créer une boutique. Vous devez en regarder un.",
@@ -38,7 +38,7 @@
   "not-a-number": "&cVous ne pouvez saisir qu'un nombre, votre entrée était {0}.",
   "exceeded-maximum": "&cLa valeur maximal à ne pas dépasser en Java.",
   "not-a-integer": "&cVous devez entrer un nombre entier, votre entrée était {0}.",
-  "player-bought-from-your-store": "&c{0} purchased {1} {2} &r&cfrom your shop, and you earned {3}.",
+  "player-bought-from-your-store": "&c{0} a acheté {1} {2} &r&cde ton shop, tu as reçu {3}.",
   "shop-out-of-stock": "&5Votre boutique aux coordonnées {0}, {1}, {2}, est à court de {3}!",
   "shop-has-no-space": "&cCette boutique n'a de la place que pour {0} de plus {1}.",
   "you-dont-have-that-many-items": "&cVous ne possédez que {0} {1} dans votre inventaire.",
@@ -98,7 +98,7 @@
     "owner": "&aPropriétaire: {0}",
     "item": "&aObjet: &e{0}",
     "item-holochat-error": "&c[Erreur]",
-    "item-holochat-data-too-large": "&c[Error] Item NBT is too large for showing",
+    "item-holochat-data-too-large": "&c[Erreur] Les tags NBT de l'item sont trop grands pour s'afficher",
     "preview": "&b[Aperçu de l'article]",
     "space": "&aEspace restant: &e{0}",
     "stock": "&aStock restant&e{0}",
@@ -113,8 +113,8 @@
   },
   "bypassing-lock": "&cContournement d'un verrou de QuickShop!",
   "that-is-locked": "&cCette boutique est verouillée.",
-  "how-many-buy": "&aEnter in chat, how many you wish to &bBUY&a. You can buy &e{0}&a. Enter &b{1}&a to buy them all.",
-  "how-many-sell": "&aEnter in chat, how much you wish to &dSELL&a. You can sell &e{0}&a. Enter &b{1}&a in chat, to sell all.",
+  "how-many-buy": "&aEntre dans le chat, combien tu souhaites &bACHETER&a. Tu peux acheter &e{0}&a. Entre &b{1}&apour tous les acheter.",
+  "how-many-sell": "&aEntre dans le chat, combien tu souhaites &dVENDRE&a. Tu peux vendre &e{0}&a. Entre &b{1}&a dans le chat pour tout vendre.",
   "not-allowed-to-create": "&cVous ne pouvez pas créer un shop ici.",
   "blacklisted-item": "&cVous ne pouvez pas vendre cet objet car il se trouve sur la liste noire",
   "how-much-to-trade-for": "&aEntrez dans le chat, combien vous souhaitez échanger &e{1}x {0}&a.",
@@ -126,8 +126,8 @@
       "limited": "&aCe shop est désormais limité"
     },
     "toggle-always-counting": {
-      "counting": "&aShop is now always counting container even is unlimited",
-      "not-counting": "&aShop is now respect if shop is unlimited"
+      "counting": "&aLa boutique compte désormais toujours le conteneur, même illimité",
+      "not-counting": "&aLe shop est maintenant respecté si le shop est illimitée"
     },
     "transfer-success": "&aTransfert du shop &e{0} &aà &e{1}",
     "transfer-success-other": "&aTransfert du shop &e{0} &aà &e{1}",
@@ -151,7 +151,7 @@
     "now-nolonger-debuging": "&aPassage réussi en mode développeur. Actualisation de QuickShop...",
     "wrong-args": "&cCommande invalide. Utilisez &l/qs help &cpour voir une liste de commandes.",
     "description": {
-      "alwayscounting": "&eSet if shop always counting container even is unlimited",
+      "alwayscounting": "&aIndiquez si le magasin compte toujours le conteneur même s'il est illimité",
       "title": "&aAide QuickShop",
       "unlimited": "&eDonne à une boutique un stock illimité.",
       "setowner": "&eModifie le propriétaire d'une boutique.",
@@ -211,8 +211,8 @@
     "freeze": "Echange désactivé"
   },
   "controlpanel": {
-    "alwayscounting": "&aAlways counting: {0} &e[&d&lChange&e]",
-    "alwayscounting-hover": "&eClick to toggle if the shop is always counting container.",
+    "alwayscounting": "&aToujours compter : {0} &e[&d&lChangement&e]",
+    "alwayscounting-hover": "&eCliquez pour changer le magasin s'il compte les conteneurs continuellement.",
     "setowner": "&aPropriétaire: &b{0} &e[&dChanger&e]",
     "infomation": "&aPanneau de contrôle de la boutique :",
     "setowner-hover": "&eCliquez pour changer le propriétaire.",
@@ -282,7 +282,7 @@
       "Qu'est-ce que tu penses? {0} Une nouvelle mise à jour publiée!",
       "Docteur, QuickShop a une nouvelle mise à jour {0}! Vous devriez mettre à jour ~",
       "Ko~ko~da~yo~ QuickShop a une nouvelle mise à jour {0}~",
-      "Paimon want told you the QuickShop have new update {0}!"
+      "Paimon souhaite te dire que QuickShop a une nouvelle mise à jour {0}!"
     ],
     "remote-disable-warning": "&cCette version de QuickShop est marquée comme désactivée par le serveur distant, ce qui signifie que cette version peut avoir de sérieux problèmes, obtenez plus en profondeur des détails sur notre page SpigotMC : {0}. Cette alerte continuera d'apparaître jusqu'à ce que vous passiez à une version stable, mais elle n'affectera pas les performances de votre serveur.",
     "label": {
@@ -318,8 +318,8 @@
   "shop-cannot-trade-when-freezing": "&cVous ne pouvez pas échanger avec cette boutique car elle est gelée.",
   "shop-freezed-at-location": "&eVotre boutique {0} à {1} a été gelée!",
   "denied-put-in-item": "&cVous ne pouvez pas mettre cet objet dans votre boutique!",
-  "how-many-buy-stack": "&eEnter in chat, how many bulks you wish to &bBUY&a. There are &e{0}&a items in each bulk and you can buy &e{1}&a bulks. Enter &b{2}&a in chat to buy all.",
-  "how-many-sell-stack": "&aEnter in chat, how many bulk you wish to &dSELL&a. There are &e{0}&a items per bulk and you can sell &e{1}&a bulks. Enter &b{2}&a in chat to sell all.",
+  "how-many-buy-stack": "&aEntre dans le chat combien de stack tu souhaites &bACHETER&a. Il y a &e{0}&a items dans chaque stack et tu peux acheter &e{1}&a stacks. Entre &b{2}&a dans le chat pour tout acheter.",
+  "how-many-sell-stack": "&aEntre dans le chat combien de stack tu souhaites &dVENDRE&a. Il y a &e{0}&a items dans chaque stack et tu peux vendre &e{1}&a stacks. Entre &b{2}&a dans le chat pour tout vendre.",
   "language": {
     "name": "&eNom: &6{0}",
     "code": "&eNom: &6{0}",
@@ -360,6 +360,6 @@
   "shop-purged-start": "&aLa purge a commencé, vérifiez la console pour plus de détails.",
   "purchase-out-of-stock": "&cCette boutique est en rupture de stock, contactez le propriétaire ou le personnel de la boutique pour recharger le stock.",
   "purchase-out-of-space": "&cCette boutique est à court d'espace, contactez le propriétaire ou le personnel de la boutique pour vider la boutique.",
-  "safe-mode": "&cQuickShop now in safe-mode, you cannot open this shop container, please contact with server administrator to fix the errors.",
-  "safe-mode-admin": "&c&lWARNING: &cThe QuickShop on this server now running under safe-mode, no features will working, please type &e/qs &c command to check any errors."
+  "safe-mode": "&cQuickShop est en mode sans échec, tu ne peux pas ouvrir ce shop, merci de contacter un administrateur du serveur pour corriger les erreurs.",
+  "safe-mode-admin": "&c&lATTENTION: &cQuickShop est en mode sans échec sur ce serveur, aucune fonctionnalité ne fonctionnera, merci de taper &e/qs &cpour contrôler les erreurs."
 }
