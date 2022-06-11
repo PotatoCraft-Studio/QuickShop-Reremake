@@ -332,7 +332,7 @@
   "currency-set": "&a商店货币已被成功设置为 {0}。",
   "currency-unset": "&a商店货币已被成功删除。现在会使用默认货币单位。",
   "currency-not-support": "&c此经济插件不支持多货币功能。",
-  "item-not-exist": "&物品 &e{0} &c不存在，请检查您的拼写。",
+  "item-not-exist": "&c物品 &e{0} &c不存在，请检查您的拼写。",
   "backup-success": "&a备份成功",
   "console-only": "&c该命令只能由控制台执行",
   "console-only-danger": "&c这是一个危险的命令，只有控制台才能执行它。",
