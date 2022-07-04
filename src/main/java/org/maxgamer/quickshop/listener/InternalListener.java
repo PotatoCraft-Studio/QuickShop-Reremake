@@ -54,10 +54,11 @@ public class InternalListener extends AbstractQSListener {
     }
 
     public boolean isForbidden(@NotNull Material shopMaterial, @NotNull Material itemMaterial) {
-        if (!Objects.equals(shopMaterial, itemMaterial)) {
-            return false;
-        }
-        return shopMaterial.isBlock() && shopMaterial.name().toUpperCase().endsWith("SHULKER_BOX");
+        if (!shopMaterial.isBlock()) return false;
+
+        // Stop players from selling shulkers in shulkers
+        return shopMaterial.name().toUpperCase().endsWith("SHULKER_BOX") &&
+                itemMaterial.name().toUpperCase().endsWith("SHULKER_BOX");
     }
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
