@@ -129,7 +129,7 @@
       "counting": "&aShop ahora siempre cuenta contenedores, incluso es ilimitado",
       "not-counting": "&aShop ahora es respeto si la tienda es ilimitada"
     },
-    "transfer-success": "&aTransferido &e{0} &ashop(s) a &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aTransferidas &e{0} {1}&a tienda(s) a &e{2}",
     "some-shops-removed": "&e{0} &atienda(s) eliminada",
     "no-owner-given": "&cNo hay dueño proporcionado",
@@ -179,7 +179,7 @@
       "supercreate": "&Crear una tienda circunvalando todas las comprobaciones de seguridad",
       "language": "&eCambiar el idioma actual",
       "removeall": "&eElimina todas las tiendas de un jugador especificado",
-      "transfer": "&eTransferir TODAS las tiendas de alguien a otros",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&ese removieron ALL tiendas en el mundo",
       "currency": "&eEstablece o remueve la configuración de divisa en la tienda",
       "ban": "&eBanear a un jugador de la tienda",

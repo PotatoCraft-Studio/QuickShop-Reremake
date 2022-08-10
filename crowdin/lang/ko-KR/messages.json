@@ -129,7 +129,7 @@
       "counting": "&a상점은 지금 항상 컨테이너를 세고 있습니다. 심지어 무제한입니다.",
       "not-counting": "&a상점이 무제한이라면 이제 상점이 존중받습니다."
     },
-    "transfer-success": "&e{0} &a의 상점(들) 을(를) &e{1}(으) 로 이전",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&e{0} {1}&a의 상점(들) 을(를) &e{2}(으) 로 이전",
     "some-shops-removed": "&e{0}의 &a상점(들)이 제거되었습니다.",
     "no-owner-given": "&c소유자가 지정되어있지 않습니다.",
@@ -179,7 +179,7 @@
       "supercreate": "&e모든 보호를 무시하고 상점을 개설합니다.",
       "language": "&e현재 사용되는 언어를 변경합니다.",
       "removeall": "&e지정된 플레이어의 모든 상점을 제거합니다.",
-      "transfer": "&e누군가의 모든 가게를 다른 곳으로 옮깁니다.",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&e지정된 월드의 모든 상점을 제거합니다.",
       "currency": "&a상점의 통화 설정을 설정하거나 제거합니다.",
       "ban": "&e플레이어를 상점에서 거래하지 못하게 합니다.",

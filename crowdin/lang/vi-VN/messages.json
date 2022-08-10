@@ -129,7 +129,7 @@
       "counting": "&aShop bây giờ luôn đếm container thậm chí là không giới hạn",
       "not-counting": "&aShop is now respect if shop is unlimited"
     },
-    "transfer-success": "&aĐã chuyển cửa hàng &e{0} &asang &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aĐã chuyển cửa hàng &e{0} {1} &asang &e{2}",
     "some-shops-removed": "&e{0} &acửa hàng đã bị xóa",
     "no-owner-given": "&cKhông có chủ sở hữu.",
@@ -179,7 +179,7 @@
       "supercreate": "&eTạo cửa hàng trong khi bỏ qua tất cả các kiểm tra bảo vệ",
       "language": "&eThay đổi ngôn ngữ hiện tại",
       "removeall": "&eXóa TẤT CẢ các cửa hàng của người chơi được chỉ định",
-      "transfer": "&eChuyển TẤT CẢ các cửa hàng từ người này sang người khác. ",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&eXóa TẤT CẢ các cửa hàng trong thế giới được chỉ định",
       "currency": "&eĐặt hoặc xóa cài đặt tiền tệ của cửa hàng",
       "ban": "&eCấm một người chơi khỏi cửa hàng",

@@ -129,7 +129,7 @@
       "counting": "&aButikken teller nå alltid beholderen, selv om den er ubegrenset",
       "not-counting": "&aButikken respekterer nå ubegrenset istedet for antall"
     },
-    "transfer-success": "&aOverførte &e{0} &abutikk(er) til &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aOverførte &e{0} &abutikker tilhørende &e{1}&a til &e{2}",
     "some-shops-removed": "&e{0} &abutikk(er) ble fjernet",
     "no-owner-given": "&cIngen eier er oppgitt",
@@ -179,7 +179,7 @@
       "supercreate": "&eOpprett en butikk mens alle beskyttelse sjekker blir ignorert",
       "language": "&eBytt språk",
       "removeall": "&eFjern ALLE butikker for en spesifisert spiller",
-      "transfer": "&eOverfør ALLE butikker fra en spiller til en annen",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&eFjern ALLE butikker i en spesifikk verden",
       "currency": "&eSett eller fjern valuta oppsettet til butikken",
       "ban": "&eUtesteng en spiller fra butikken",

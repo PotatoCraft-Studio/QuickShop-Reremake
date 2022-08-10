@@ -129,7 +129,7 @@
       "counting": "&aShop is now always counting container even is unlimited",
       "not-counting": "&aShop is now respect if shop is unlimited"
     },
-    "transfer-success": "&aTransferred &e{0} &ashop(s) to &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aTransferred &e{0} {1}&a's shop(s) to &e{2}",
     "some-shops-removed": "&e{0} &ashop removed",
     "no-owner-given": "&cNo owner provided",
@@ -179,7 +179,7 @@
       "supercreate": "&eLétrehoz egy boltot az összes ellenőrzés kihagyásával",
       "language": "&eSwitch the language that quickshop using",
       "removeall": "&eRemove ALL shops of a specified player",
-      "transfer": "&eTransfer someone's ALL shops to other",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&eRemove ALL shops in a specified world",
       "currency": "&eSet or remove the currency setting of the shop",
       "ban": "&eBans a player from the shop",

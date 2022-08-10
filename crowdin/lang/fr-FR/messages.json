@@ -129,7 +129,7 @@
       "counting": "&aLa boutique compte désormais toujours le conteneur, même illimité",
       "not-counting": "&aLe shop est maintenant respecté si le shop est illimitée"
     },
-    "transfer-success": "&aTransfert du shop &e{0} &aà &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aTransfert du shop &e{0} &aà &e{1}",
     "some-shops-removed": "&e{0} &ashop(s) supprimé(s)",
     "no-owner-given": "&cAucun propriétaire indiqué",
@@ -179,7 +179,7 @@
       "supercreate": "&eCréer une boutique en contournant tous les contrôles de protection",
       "language": "Modifier la langue actuelle",
       "removeall": "&eSupprimer toutes les boutiques d'un joueur spécifié",
-      "transfer": "&eTransférer TOUS les shops d'un joueur vers un autre",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&eSupprime TOUTES les boutiques dans un monde spécifié",
       "currency": "&eDéfinir ou supprimer les paramètres de devise de la boutique",
       "ban": "&eBanni un joueur de la boutique",

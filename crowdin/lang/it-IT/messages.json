@@ -129,7 +129,7 @@
       "counting": "Il negozio ora conta sempre il contenitore anche se è illimitato",
       "not-counting": "&aIl negozio non conta più il contenitore se è illimitato"
     },
-    "transfer-success": "&aTrasferiti &e{0} &ashop(s) a &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aTrasferiti &e{0} {1}&a negozi a &e{2}",
     "some-shops-removed": "&e{0} &ashop rimosso/i",
     "no-owner-given": "&cNessun proprietario fornito",
@@ -179,7 +179,7 @@
       "supercreate": "&eCrea un negozio aggirando tutti i controlli di protezione",
       "language": "&eCambia la lingua attualmente in uso",
       "removeall": "&eRimuovi TUTTI i negozi di un giocatore specificato",
-      "transfer": "&eTrasferisci tutti i negozi di qualcuno ad un altro player",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&eRimuovi tutti i negozi in uno specifico mondo",
       "currency": "&eImposta o rimuovi l'impostazione della valuta del negozio",
       "ban": "&eBannato il giocatore dal negozio",

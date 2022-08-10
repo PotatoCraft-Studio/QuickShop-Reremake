@@ -129,7 +129,7 @@
       "counting": "&aShop is now always counting container even is unlimited",
       "not-counting": "&aShop is now respect if shop is unlimited"
     },
-    "transfer-success": "&aTransferat &{0} &ashop(i) catre{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aTransferat &{0} {1}Magazine ale &lui{2}",
     "some-shops-removed": "&e{0} &ashop(uri) eliminat(e)",
     "no-owner-given": "&cNiciun proprietar",
@@ -179,7 +179,7 @@
       "supercreate": "&eCreate a shop while bypassing all protection checks",
       "language": "&eChange the currently used language",
       "removeall": "&eRemove ALL shops of a specified player",
-      "transfer": "&eTransfer someone's ALL shops to other",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&eRemove ALL shops in a specified world",
       "currency": "&eSet or remove the currency setting of the shop",
       "ban": "&eBans a player from the shop",

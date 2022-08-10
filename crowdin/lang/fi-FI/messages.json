@@ -129,7 +129,7 @@
       "counting": "&aShop is now always counting container even is unlimited",
       "not-counting": "&aShop is now respect if shop is unlimited"
     },
-    "transfer-success": "&aSiirretty &e{0} &akauppa(a) pelaajalle &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aSiirretty &e{0} &apelaajan &e{1}&a kauppa(a) pelaajalle &e{2}",
     "some-shops-removed": "&e{0} &akauppa(a) poistettu",
     "no-owner-given": "&cEi omistajaa annettu",
@@ -179,7 +179,7 @@
       "supercreate": "&eLuo kauppa ohittamalla kaikki suojaustarkistukset",
       "language": "&eVaihda tällä hetkellä käytettyä kieltä",
       "removeall": "&ePoista KAIKKI kaupat kyseiseltä pelaajalta",
-      "transfer": "&eSiirrä jonkun KAIKKI kaupat toiselle",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&ePoista KAIKKI kaupat kyseisestä maailmasta",
       "currency": "&eMuuta kaupan valuutta-asetuksia",
       "ban": "&eAntaa pelaajalle porttikiellon kauppaasi",

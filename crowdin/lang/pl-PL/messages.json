@@ -129,7 +129,7 @@
       "counting": "&aSklep zawsze liczy pojemnik nawet jeśli jest nieograniczony",
       "not-counting": "&aSklep jest teraz respektowany, jeśli jest nieograniczony"
     },
-    "transfer-success": "&aPrzeniesiono &e{0} &asklep(y/ów) do &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aPrzeniesiono &{0} sklep(y/ów) {1} do &e{2}",
     "some-shops-removed": "&e{0} &asklep(y/ów) usunięto",
     "no-owner-given": "&cNie podano właściciela",
@@ -179,7 +179,7 @@
       "supercreate": "&eUtwórz sklep podczas omijania wszystkich kontroli ochrony",
       "language": "&eZmień aktualnie używany język",
       "removeall": "&eUsuń WSZYSTKIE sklepy określonego gracza",
-      "transfer": "&ePrzenieś czyjeś WSZYSTKIE sklepy do innych",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&eUsuń WSZYSTKIE sklepy w określonym świecie",
       "currency": "&eUstaw lub usuń ustawienia waluty sklepu",
       "ban": "&eBanuje gracza ze sklepu",

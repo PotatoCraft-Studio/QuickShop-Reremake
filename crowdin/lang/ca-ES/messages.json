@@ -129,7 +129,7 @@
       "counting": "&aShop is now always counting container even is unlimited",
       "not-counting": "&aShop is now respect if shop is unlimited"
     },
-    "transfer-success": "&aS'han transferit &e{0} &abotigues a &e{1}",
+    "transfer-success": "&aTransferred &e{0} &a selling shop(s) to &e{1}",
     "transfer-success-other": "&aS'han transferit les botigues de &e{0} {1}&a a &e{2}",
     "some-shops-removed": "&e{0} &abotigues eliminades",
     "no-owner-given": "&cNo s'ha proporcionat cap propietari.",
@@ -179,7 +179,7 @@
       "supercreate": "&eCrea una botiga ignorant les proves de seguretat.",
       "language": "&eCanvia la llengua actual.",
       "removeall": "&eElimina TOTES les botigues del jugador especificat.",
-      "transfer": "&eTransfereix TOTES les botigues d'algú a algú altre.",
+      "transfer": "&eTransfer someone's ALL selling shops to other",
       "removeworld": "&eElimina TOTES les botigues del món especificat.",
       "currency": "&eSel·lecciona o elimina la moneda que fa servir la botiga.",
       "ban": "&eBandeja un jugador de la botiga.",
