@@ -141,7 +141,7 @@
     "cleaned": "&a&e{0}&a bolt törlése.",
     "no-type-given": "&cHasználat: /qs find <tárgy>",
     "no-world-given": "&cPlease specify a world name",
-    "bulk-size-not-set": "&cUsage: /qs size <amount>",
+    "bulk-size-not-set": "&cHasználat: /qs méret <amount>",
     "bulk-size-now": "&aNow trading &e{0}x {1}",
     "invalid-bulk-amount": "&cThe given value {0} larger than max stack size or lower than one",
     "no-trade-item": "&aPlease hold a trade item to change in main hand",

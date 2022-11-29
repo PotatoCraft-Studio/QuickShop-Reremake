@@ -51,7 +51,7 @@
   "forbidden-vanilla-behavior": "&c該操作不符合原版行為，因此被禁止。",
   "no-price-given": "&c請輸入有效的價格。",
   "average-price-nearby": "&a附近的平均價格：&e{0} 元。",
-  "shop-has-changed": "&c你嘗試交易的商店在點擊後發生變動！",
+  "shop-has-changed": "&c你嘗試交易的商店在點擊後已有變動！",
   "shop-not-exist": "&c商店不存在。",
   "nearby-shop-this-way": "&a商店距離你 {0} 個方塊。",
   "nearby-shop-header": "&a附近匹配商店 &b{0}&a：",

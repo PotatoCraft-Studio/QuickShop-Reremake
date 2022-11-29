@@ -222,7 +222,7 @@
     "mode-selling-hover": "&eKliknutím změníte obchod na režim BUY.",
     "mode-buying": "&fRežim obchodu: &bSelling &7[&d&3Change&7]",
     "mode-buying-hover": "&eKliknutím změníte obchod na SELL režim.",
-    "price": "&fVlastník: &b{0} &7[&d&3Změna&7]",
+    "price": "&fCena: &b{0} &7[&d&3Změna&7]",
     "price-hover": "&eKliknutím nastavíte novou cenu itemu.",
     "refill": "&fRefill: Doplnit itemy&7[&d&3OK&7]",
     "refill-hover": "&eKlikněte pro doplnění obchodu.",

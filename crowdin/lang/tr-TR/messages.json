@@ -12,7 +12,7 @@
   "no-permission": "&cBunu yapmaya iznin yok.",
   "integrations-check-failed-create": "&c{0} entegrasyonu market oluşumunu reddetti",
   "integrations-check-failed-trade": "&c{0} entegrasyonu market ticaretini reddetti",
-  "3rd-plugin-build-check-failed": "&c3rd party plugin &l{0}&r&c denied the protection checks (build protection), did you have build permission of this 3rd plugin? If is not expected, please contact admin.",
+  "3rd-plugin-build-check-failed": "&cÜçünçü parti bir eklenti &l{0},&r&c koruma kontrollerini reddetti (inşa/yapı koruması),bu eklentinin inşa/yapı iznine sahip misiniz? Eğer değilseniz admin ile iletişime geçin.",
   "3rd-plugin-build-check-failed-admin": "&7(AdminOnly) &d{0} &8denied the protection checks (build protection), If this not excepted, try add &d{1} &7to listener blacklist. &7Configure Guide: https://github.com/PotatoCraft-Studio/QuickShop-Reremake/wiki/Use-protection-listener-filter",
   "no-creative-break": "&sYaratıcı modda diğer oyuncuların marketlerini kıramazsın, hayatta kalma moduna geçin veya yerine {0} supertool aletini kullanın.",
   "trading-in-creative-mode-is-disabled": "&cYaratıcı modda iken bu marketle ticaret yapamazsın.",
