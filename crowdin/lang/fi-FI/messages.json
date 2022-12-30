@@ -5,7 +5,7 @@
   "translation-version": "Tuettu versio: Reremake",
   "translation-contributors": "Avustajat: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Kielialue: Suomi (fi_FI)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cCould not find a block for creating shop. You need to look at one.",
   "not-looking-at-shop": "&cQuickShoppia ei löytynyt. Sinun täytyy katsoa yhtä.",
   "no-anythings-in-your-hand": "&cKädessäsi ei ole mitään.",
@@ -246,7 +246,8 @@
     "freeze": "&eJäädytyksen tila: &b{0} &e[&d&lVaihda&e]",
     "freeze-hover": "&eVaihda kaupan jäädytystila.",
     "toggledisplay": "&eDisplayItem: &b{0} &e[&d&lToggle&e]",
-    "toggledisplay-hover": "&eToggle the shop's displayitem status"
+    "toggledisplay-hover": "&eToggle the shop's displayitem status",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

@@ -5,7 +5,7 @@
   "translation-version": "Versão de suporte: Remake",
   "translation-contributors": "Contribuidores: Torre de Timor, Netherfoam, KaiNoMood, Mgazul, JackTheChicken e Andre_601",
   "translation-country": "Zona do idioma: Português Brasileiro (pt_BR)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cNão conseguimos achar um bloco para criar a loja. Você precisa olhar para um.",
   "not-looking-at-shop": "Não conseguimos encontrar uma QuickShop. Você precisa estar olhando para uma.",
   "no-anythings-in-your-hand": "&cNão há nada na sua mão.",
@@ -246,7 +246,8 @@
     "freeze": "&eModo de bloqueio: &b{0} &e[&d&lToggle&e]",
     "freeze-hover": "&eAlterna o status de congelamento da loja.",
     "toggledisplay": "&eDisplayItem: &b{0} &e[&d&lAlternar&e]",
-    "toggledisplay-hover": "&eAtivar o display de itens nessa loja"
+    "toggledisplay-hover": "&eAtivar o display de itens nessa loja",
+    "staff": "&aValor da Staff: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

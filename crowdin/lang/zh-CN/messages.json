@@ -5,7 +5,7 @@
   "translation-version": "支持版本：Reremake",
   "translation-contributors": "开发贡献者：Timtower, Netherfoam, KaiNoMood JackTheChicken 和 Andre_601",
   "translation-country": "本地化语言：简体中文 (zh_CN)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&c无法找到创建商店的方块，您需要注视着一个商店方块",
   "not-looking-at-shop": "&c无法找到商店，您需要注视着你想要操作的商店。",
   "no-anythings-in-your-hand": "&c你的手里没有任何物品。",
@@ -246,7 +246,8 @@
     "freeze": "&e冻结模式： &b{0} &e[&d&l切换&e]",
     "freeze-hover": "&e切换商店冻结状态。",
     "toggledisplay": "&e悬浮物显示: &b{0} &e[&d&l切换&e]",
-    "toggledisplay-hover": "&e切换商店是否显示悬浮物"
+    "toggledisplay-hover": "&e切换商店是否显示悬浮物",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

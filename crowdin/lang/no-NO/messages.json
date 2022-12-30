@@ -5,7 +5,7 @@
   "translation-version": "Støttet versjon: Reremake",
   "translation-contributors": "Bidragsytere: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "Språksone: Norsk (no_NO)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cKunne ikke finne en blokk for å opprette butikk. Du må se på en gyldig blokk.",
   "not-looking-at-shop": "&cKunne ikke finne en QuickShop. Du må se på en butikk.",
   "no-anythings-in-your-hand": "&cDet er ingenting i hånden din.",
@@ -246,7 +246,8 @@
     "freeze": "&eFrys modus: &b{0} &e[&d&lVeksle&e]",
     "freeze-hover": "&eVeksle butikkens frysestatus.",
     "toggledisplay": "&eUtstillingsvare: &b{0} &e[&d&lVeksle&e]",
-    "toggledisplay-hover": "&eSlå av/på butikkens utstillingsvare"
+    "toggledisplay-hover": "&eSlå av/på butikkens utstillingsvare",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

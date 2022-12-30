@@ -5,7 +5,7 @@
   "translation-version": "&c&lサポートバージョン: &b&lReremake",
   "translation-contributors": "貢献者: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken, Andre_601 and Namiu",
   "translation-country": "&c&l言語圏: &b&l日本語 (ja_JP)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cショップを作成するためのブロックが見つかりませんでした。確認する必要があります。",
   "not-looking-at-shop": "&cQuickShopが見つかりませんでした。確認する必要があります。",
   "no-anythings-in-your-hand": "&cあなたは手に何も持っていません。",
@@ -246,7 +246,8 @@
     "freeze": "&eフリーズモード: &b{0} &e[&d&l切り替え&e]",
     "freeze-hover": "&eショップのフリーズ状態を切り替えます。",
     "toggledisplay": "&eディスプレイアイテム: &b{0} &e[&d&l切り替え&e]",
-    "toggledisplay-hover": "&eショップのディスプレイアイテムの状態を切り替えます"
+    "toggledisplay-hover": "&eショップのディスプレイアイテムの状態を切り替えます",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

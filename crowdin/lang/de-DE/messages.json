@@ -5,7 +5,7 @@
   "translation-version": "Unterstütze Version: Reremake",
   "translation-contributors": "Mitwirkende: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken und Andre_601",
   "translation-country": "Sprache: Deutsch (de_DE)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cKonnte keinen Block zum erstellen eines Shops finden. Stelle sicher dass du einen ansiehst.",
   "not-looking-at-shop": "&cKonnte keinen QuickShop finden. Du musst auf einen schauen.",
   "no-anythings-in-your-hand": "&cEs befindet sich nichts in deiner Hand.",
@@ -246,7 +246,8 @@
     "freeze": "&eFreeze Modus: &b{0} &e[&d&lÄndern&e]",
     "freeze-hover": "&eÄndere den Freeze-Status des Shops.",
     "toggledisplay": "&eItem anzeigen: &b{0} &e[&d&lÄndern&e]",
-    "toggledisplay-hover": "&eÄndere den Item Anzeigemodus des Shops"
+    "toggledisplay-hover": "&eÄndere den Item Anzeigemodus des Shops",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

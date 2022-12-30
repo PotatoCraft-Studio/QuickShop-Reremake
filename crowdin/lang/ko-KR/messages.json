@@ -5,7 +5,7 @@
   "translation-version": "지원 버전: Reremake",
   "translation-contributors": "기여자: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "언어 지역: 한국어 (ko_KR)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&c상점을 만들수 잇는 블럭을 찾을수 없습니다. 상점으로 만들 블럭을 봐야합니다.",
   "not-looking-at-shop": "&c상점을 찾을수 없습니다. 상점을 보고있어야만 합니다.",
   "no-anythings-in-your-hand": "&c당신의 손에 아무것도 없습니다.",
@@ -246,7 +246,8 @@
     "freeze": "&e동결 상태: &b{0} &e[&d&l전환&e]",
     "freeze-hover": "&e상점 동결 상태 전환.",
     "toggledisplay": "&e아이템 표시: &b{0} &e[&d&l전환&e]",
-    "toggledisplay-hover": "&e상점 표시 항목 상태 전환"
+    "toggledisplay-hover": "&e상점 표시 항목 상태 전환",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

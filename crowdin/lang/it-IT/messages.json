@@ -5,7 +5,7 @@
   "translation-version": "Versione di Supporto: Reremake",
   "translation-contributors": "Collaboratori: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601, sandtechnology, MiniMoro",
   "translation-country": "Lingua zona: Italian (it_IT)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "Impossibile trovare un blocco per la creazione del negozio. Devi guardarne uno.",
   "not-looking-at-shop": "&cImpossibile trovare un negozio. È necessario guardarne uno.",
   "no-anythings-in-your-hand": "&cNon hai nulla in mano.",
@@ -246,7 +246,8 @@
     "freeze": "&eModalità congelato: &b{0} &e[&d&lAttiva/Disattiva&e]",
     "freeze-hover": "&eAttiva lo stato di blocco del negozio.",
     "toggledisplay": "&eVisualizzazione oggetto: &b{0} &e[&d&lAttiva/Disattiva&e]",
-    "toggledisplay-hover": "&eAttiva/disattiva lo stato dell'oggetto visualizzato nel negozio"
+    "toggledisplay-hover": "&eAttiva/disattiva lo stato dell'oggetto visualizzato nel negozio",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

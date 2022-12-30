@@ -5,7 +5,7 @@
   "translation-version": "Supportversion: Reremake",
   "translation-contributors": "Medhjälpare: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken och Andre_601",
   "translation-country": "Språkområde: Svenska (sv_SE)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cKunde inte hitta ett block för att skapa butik. Du måste titta på ett.",
   "not-looking-at-shop": "&cKunde inte hitta en QuickShop. Du måste titta på en.",
   "no-anythings-in-your-hand": "&cDet finns inget i din hand.",
@@ -246,7 +246,8 @@
     "freeze": "&eFryst läge: &b{0} &e[&d&lVäxla&e]",
     "freeze-hover": "&eVäxla butikens frysningsstatus.",
     "toggledisplay": "&eVisningsföremål: &b{0} &e[&d&lVäxla&e]",
-    "toggledisplay-hover": "&eVäxla butikens status för visningsföremålet"
+    "toggledisplay-hover": "&eVäxla butikens status för visningsföremålet",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

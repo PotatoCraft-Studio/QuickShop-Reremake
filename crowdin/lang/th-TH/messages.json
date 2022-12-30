@@ -5,7 +5,7 @@
   "translation-version": "เวอร์ชั่นที่รองรับ: Reremake",
   "translation-contributors": "Contributors: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken and Andre_601",
   "translation-country": "โซนภาษา: ไทย (th_TH)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "ไม่พบบล็อกสำหรับสร้างร้านค้า คุณต้องมองดูที่ป้ายหีบ",
   "not-looking-at-shop": "ไม่พบหีบสำหรับสร้างร้านค้า คุณต้องมองดูที่ป้ายหีบ",
   "no-anythings-in-your-hand": "&cไม่มีอะไรอยู่ในมือของคุณ",
@@ -246,7 +246,8 @@
     "freeze": "&eFreeze mode: &b{0} &e[&d&lToggle&e]",
     "freeze-hover": "&eToggle the shop's freeze status.",
     "toggledisplay": "&eDisplayItem: &b{0} &e[&d&lToggle&e]",
-    "toggledisplay-hover": "&eToggle the shop's displayitem status"
+    "toggledisplay-hover": "&eToggle the shop's displayitem status",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

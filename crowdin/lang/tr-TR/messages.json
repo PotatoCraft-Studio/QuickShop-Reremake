@@ -5,7 +5,7 @@
   "translation-version": "Destek Versiyonu: Reremake",
   "translation-contributors": "Katkıda Bulunanlar: Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken Andre_601 and ZOYTRK#4529",
   "translation-country": "Dil Bölgesi: Türkçe (tr_TR)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cHiç Mağaza bulunamadı. Birine bakman lazım.",
   "not-looking-at-shop": "&sHiç Mağaza bulunamadı. Birine bakman lazım.",
   "no-anythings-in-your-hand": "&cElinde hiçbir şey yok.",
@@ -246,7 +246,8 @@
     "freeze": "&eDondurma modu: &b{0} &e[&d&lDurum&e]",
     "freeze-hover": "&eMarketin dondurulma durumunu değiştir.",
     "toggledisplay": "&eGösterilen Eşya: &b{0} &e[&d&lDeğiştir&e]",
-    "toggledisplay-hover": "&eMağazanın hologramının durumunu değiştir"
+    "toggledisplay-hover": "&eMağazanın hologramının durumunu değiştir",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

@@ -5,7 +5,7 @@
   "translation-version": "&c&lVersión Soportada: &b&lReremake",
   "translation-contributors": "Contribuidores: Randall_Rut, Timtower, Netherfoam, KaiNoMood, Mgazul, JackTheChicken y Andre_601",
   "translation-country": "&c&lIdioma: &b&lEspañol (es_ES)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cNo se pudo encontrar un bloque para crear una tienda. Tienes que mirar uno.",
   "not-looking-at-shop": "&cNo se pudo encontrar ninguna tienda. Tienes que mirar hacia una.",
   "no-anythings-in-your-hand": "&cNo hay nada en tu mano.",
@@ -246,7 +246,8 @@
     "freeze": "&eTienda bloqueada: &b{0} &e[&d&lCambiar&e]",
     "freeze-hover": "&eCambiar estado de congelación de la tienda.,",
     "toggledisplay": "&eMostrar Item: &b{0} &e[&d&lCambiar&e]",
-    "toggledisplay-hover": "&eAlternar el estado del mostrar item de la tienda"
+    "toggledisplay-hover": "&eAlternar el estado del mostrar item de la tienda",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",

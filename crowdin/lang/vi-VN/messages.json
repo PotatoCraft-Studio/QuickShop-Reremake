@@ -5,7 +5,7 @@
   "translation-version": "Phiên bản hỗ trợ: Reremake",
   "translation-contributors": "Người đóng góp: huyhhuy",
   "translation-country": "Vùng ngôn ngữ: Tiếng Việt (vi_VN)",
-  "language-version": "64",
+  "language-version": "65",
   "not-looking-at-valid-shop-block": "&cKhông thể tìm ra block để tạo Shop. Bạn cần phải nhìn vào block trước.",
   "not-looking-at-shop": "&cKhông thể tìm ra QuickShop. Bạn cần phải nhìn vào nó trước.",
   "no-anythings-in-your-hand": "&cChẳng có gì trong tay bạn cả.",
@@ -246,7 +246,8 @@
     "freeze": "&eChế độ đóng băng: &b{0} &e[&d&lChuyển đổi&e]",
     "freeze-hover": "&eChuyển đổi trạng thái đóng băng của cửa hàng.",
     "toggledisplay": "&eDisplayItem: &b{0} &e[&d&lToggle&e]",
-    "toggledisplay-hover": "&eToggle the shop's displayitem status"
+    "toggledisplay-hover": "&eToggle the shop's displayitem status",
+    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",
