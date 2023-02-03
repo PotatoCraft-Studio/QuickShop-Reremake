@@ -576,6 +576,37 @@ public class Util {
         return result == null ? MsgUtil.getItemi18n(itemStack.getType().name()) : result;
     }
 
+    /**
+     * Get a String List of all enchants on an enchanted book
+     * 
+     * @param itemStack
+     * @return The names of enchants contained on the enchanted book
+     */
+    @NotNull
+    public static List<String> getBooksEnchantments(@NotNull ItemStack itemStack) {
+        List<String> enchants = new ArrayList<>();
+        if (itemStack.getType() == Material.ENCHANTED_BOOK) {
+            EnchantmentStorageMeta meta = (EnchantmentStorageMeta) itemStack.getItemMeta();
+            if (meta.hasStoredEnchants()) {
+                for (Enchantment enchant : meta.getStoredEnchants().keySet()) {
+                    enchants.add(enchant.getKey().getKey());
+                }
+            }
+        }
+        return enchants;
+    }
+
+    @NotNull
+    public static boolean listContainsString(@NotNull List<String> list, @NotNull String string) {
+        boolean stringFound = false;
+        if (list.size() > 0) {
+            for (String entry : list) {
+                if (entry.contains(string))
+                    stringFound = true;
+            }
+        }
+        return stringFound;
+    }
     @NotNull
     public static String getFirstEnchantmentName(@NotNull EnchantmentStorageMeta meta) {
         if (!meta.hasStoredEnchants()) {
