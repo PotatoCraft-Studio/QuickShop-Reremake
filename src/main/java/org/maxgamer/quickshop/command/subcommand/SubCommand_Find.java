@@ -89,13 +89,11 @@ public class SubCommand_Find implements CommandHandler<Player> {
             double distance = shopVector.distance(playerVector);
             //Check distance
             if (distance <= maxDistance) {
-                //Collect valid shop that trading items we want
-                if (!Util.getItemStackName(shop.getItem()).toLowerCase().contains(lookFor)) {
-                    if (!shop.getItem().getType().name().toLowerCase().contains(lookFor)) {
-                        if (!Util.listContainsString(Util.getBooksEnchantments(shop.getItem()), lookFor)) {
-                            continue;
-                        }
-                    }
+                // Collect valid shop that trading items we want
+                if (!Util.getItemStackName(shop.getItem()).toLowerCase().contains(lookFor)
+                        && !shop.getItem().getType().name().toLowerCase().contains(lookFor)
+                        && !Util.listContainsString(Util.getBooksEnchantments(shop.getItem()), lookFor)) {
+                    continue;
                 }
                 if (excludeOutOfStock) {
                     if ((shop.isSelling() && shop.getRemainingStock() == 0) || (shop.isBuying() && shop.getRemainingSpace() == 0)) {

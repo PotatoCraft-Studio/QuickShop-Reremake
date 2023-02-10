@@ -599,7 +599,7 @@ public class Util {
     @NotNull
     public static boolean listContainsString(@NotNull List<String> list, @NotNull String string) {
         boolean stringFound = false;
-        if (list.size() > 0) {
+        if (!list.isEmpty()) {
             for (String entry : list) {
                 if (entry.contains(string))
                     stringFound = true;
