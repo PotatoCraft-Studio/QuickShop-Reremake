@@ -577,36 +577,33 @@ public class Util {
     }
 
     /**
-     * Get a String List of all enchants on an enchanted book
+     * Check all enchantments on a book and return true if they contain the
+     * nameToMatch
      * 
-     * @param itemStack
+     * @param itemStack The enchanted book itemstack
+     * @param String    The name of the enchant to check the book for
      * @return The names of enchants contained on the enchanted book
      */
     @NotNull
-    public static List<String> getBooksEnchantments(@NotNull ItemStack itemStack) {
-        List<String> enchants = new ArrayList<>();
+    public static boolean isBookEnchantmentsMatched(@NotNull ItemStack itemStack, @NotNull String nameToMatch) {
         if (itemStack.getType() == Material.ENCHANTED_BOOK) {
-            EnchantmentStorageMeta meta = (EnchantmentStorageMeta) itemStack.getItemMeta();
-            if (meta.hasStoredEnchants()) {
-                for (Enchantment enchant : meta.getStoredEnchants().keySet()) {
-                    enchants.add(enchant.getKey().getKey());
+            ItemMeta itemMeta = itemStack.getItemMeta();
+            if (!(itemMeta instanceof EnchantmentStorageMeta))
+                return false;
+            EnchantmentStorageMeta enchantmentStorageMeta = (EnchantmentStorageMeta) itemStack.getItemMeta();
+            if (enchantmentStorageMeta.hasStoredEnchants()) {
+                for (Enchantment enchantment : enchantmentStorageMeta.getStoredEnchants().keySet()) {
+                    nameToMatch = nameToMatch.toUpperCase(Locale.ROOT);
+                    if (enchantment.getKey().getKey().toUpperCase(Locale.ROOT).contains(nameToMatch)
+                            || MsgUtil.getEnchi18n(enchantment).toUpperCase(Locale.ROOT).contains(nameToMatch)) {
+                        return true;
+                    }
                 }
             }
         }
-        return enchants;
+        return false;
     }
 
-    @NotNull
-    public static boolean listContainsString(@NotNull List<String> list, @NotNull String string) {
-        boolean stringFound = false;
-        if (!list.isEmpty()) {
-            for (String entry : list) {
-                if (entry.contains(string))
-                    stringFound = true;
-            }
-        }
-        return stringFound;
-    }
     @NotNull
     public static String getFirstEnchantmentName(@NotNull EnchantmentStorageMeta meta) {
         if (!meta.hasStoredEnchants()) {

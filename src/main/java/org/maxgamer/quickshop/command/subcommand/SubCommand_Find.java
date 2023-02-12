@@ -92,7 +92,7 @@ public class SubCommand_Find implements CommandHandler<Player> {
                 // Collect valid shop that trading items we want
                 if (!Util.getItemStackName(shop.getItem()).toLowerCase().contains(lookFor)
                         && !shop.getItem().getType().name().toLowerCase().contains(lookFor)
-                        && !Util.listContainsString(Util.getBooksEnchantments(shop.getItem()), lookFor)) {
+                        && !Util.isBookEnchantmentsMatched(shop.getItem(), lookFor)) {
                     continue;
                 }
                 if (excludeOutOfStock) {
