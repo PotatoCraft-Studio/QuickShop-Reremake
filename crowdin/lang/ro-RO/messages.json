@@ -35,7 +35,7 @@
   "shop-stock-too-low": "&cMagazinul mai are {0} {1}!",
   "you-cant-afford-to-buy": "&cCosta {0}, dar ai doar {1}",
   "select-shop-type-or-cancel": "&aWhich shop type you want to use? \n {0} {1} {2}",
-  "select-shop-type-or-cancel-selling-button": "&d[Selling]",
+  "select-shop-type-or-cancel-selling-button": "&d[Vanzare]",
   "select-shop-type-or-cancel-buying-button": "&b[Buying]",
   "select-shop-type-or-cancel-cancel-button": "&c[Cancel]",
   "not-a-valid-shop-type": "&cYou can only input Buy/Sell/Cancel, your input was {0}.",
