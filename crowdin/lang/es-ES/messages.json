@@ -79,7 +79,7 @@
   "warn-to-paste": "&eRecopilando datos y subiendo a Pastebin, esto puede llevar un tiempo. &c&lAviso:&c ¡Los datos serán públicos durante una semana! Esto puede revelar la configuración de tu servidor y otra información sensible. Asegúrate de enviarlo solamente a &lpersonal/desarrolladores de confianza.",
   "price-too-high": "&c¡El precio establecido es demasiado alto! No puedes crear una tienda con un precio superior a {0}.",
   "you-cant-create-shop-in-there": "&cNo tienes permiso para crear una tienda en este lugar.",
-  "unknown-player": "&cTarget player doesn't existed or not online, please check the username you typed.",
+  "unknown-player": "&cEl jugador objetivo no existe, comprueba el nombre de usuario que escribió.",
   "shop-staff-cleared": "&aTodo el personal de tu tienda ha sido eliminado con éxito.",
   "shop-staff-added": "&aAgregado a {0} como personal de tu tienda con éxito.",
   "shop-staff-deleted": "&aEliminado a {0} como personal de tu tienda con éxito.",
@@ -247,7 +247,7 @@
     "freeze-hover": "&eCambiar estado de congelación de la tienda.,",
     "toggledisplay": "&eMostrar Item: &b{0} &e[&d&lCambiar&e]",
     "toggledisplay-hover": "&eAlternar el estado del mostrar item de la tienda",
-    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
+    "staff": "&aCantidad de modificación: &b{0} &e[&d&lModify&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",
