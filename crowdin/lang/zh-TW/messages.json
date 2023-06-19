@@ -356,8 +356,8 @@
     "failed": "&c無法重新載入，請檢查伺服器控制台",
     "scheduled": "&a重新載入完成。&7（一些更改需要一段時間後作用）"
   },
-  "client-language-changed": "&aQuickShop 偵測到你的客戶端語言已切換，我們現在為你切換為 {0}。",
-  "client-language-unsupported": "&eQuickShop 不支援你的客戶端語言，我們現在將它還原為 {0}。",
+  "client-language-changed": "&aQuickShop 偵測到你的用戶端語言已切換，我們現在為你切換為 {0}。",
+  "client-language-unsupported": "&eQuickShop 不支援你的用戶端語言，我們現在將它還原為 {0}。",
   "taxaccount-set": "&a已經設定 &e{0} &a為該商店的稅金帳戶",
   "taxaccount-unset": "&a該商店的稅金帳戶現在按照伺服器全域設定。",
   "taxaccount-invalid": "&c無效的目標帳戶，請輸入有效的玩家名稱或 uuid（須加破折號）。",

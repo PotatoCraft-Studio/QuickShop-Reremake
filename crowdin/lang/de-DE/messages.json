@@ -34,7 +34,7 @@
   "shop-purchase-cancelled": "&cShop-Kauf abgebrochen.",
   "shop-stock-too-low": "&cDer Shop hat nur noch {0}{1} übrig!",
   "you-cant-afford-to-buy": "&cEs kostet {0}, aber du hast nur {1}",
-  "select-shop-type-or-cancel": "&aWhich shop type you want to use? \n {0} {1} {2}",
+  "select-shop-type-or-cancel": "&aWelchen Shoptyp möchten Sie verwenden? \n {0} {1} {2}",
   "select-shop-type-or-cancel-selling-button": "&d[Selling]",
   "select-shop-type-or-cancel-buying-button": "&b[Buying]",
   "select-shop-type-or-cancel-cancel-button": "&c[Cancel]",
