@@ -9,7 +9,7 @@ jobs:
       - name: Warn potential conflicts
         uses: wktk/conflibot@v1.1.0
         with:
-          github-token: ${{ GITHUB_TOKEN }}
+          github-token: ${{ env.GITHUB_TOKEN }}
           exclude: |
             yarn.lock
             **/*.bin
