@@ -43,6 +43,7 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.EnderChest;
+import org.bukkit.block.ShulkerBox;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.block.data.Directional;
 import org.bukkit.command.CommandSender;
@@ -56,6 +57,7 @@ import org.bukkit.event.Event;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.BlockStateMeta;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -272,7 +274,7 @@ public class Util {
 
     /**
      * Counts the number of shop items in the given inventory where Util.matches(inventory item, item) is
-     * true.
+     * true, including items inside shulker boxes.
      *
      * @param inv  The inventory to search
      * @param shop The Shop for matching
@@ -289,9 +291,29 @@ public class Util {
             }
             if (shop.matches(iStack)) {
                 items += iStack.getAmount();
+                continue;
+            }
+            if (!isShulkerBox(iStack)) {
+                ShulkerBox shulker = (ShulkerBox) ((BlockStateMeta) iStack.getItemMeta()).getBlockState();
+                for (final ItemStack shulkerStack : shulker.getInventory().getContents()) {
+                    if (shop.matches(shulkerStack)) {
+                        items += shulkerStack.getAmount();
+                    }
+                }
             }
         }
         return items / shop.getItem().getAmount();
+    }
+
+    /**
+     * Returns whether the given item stack is a shulker box or not, of any color.
+     *
+     * @param item The item stack to check
+     * @return whether the item is a shulker or not.
+     */
+    public static boolean isShulkerBox(@Nullable ItemStack item) {
+        return item != null && item.getItemMeta() instanceof BlockStateMeta
+                && ((BlockStateMeta) item.getItemMeta()).getBlockState() instanceof ShulkerBox;
     }
 
     /**

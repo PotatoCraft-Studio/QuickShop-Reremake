@@ -35,6 +35,7 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.BlockState;
+import org.bukkit.block.ShulkerBox;
 import org.bukkit.block.Sign;
 import org.bukkit.block.data.type.Chest;
 import org.bukkit.block.sign.Side;
@@ -45,6 +46,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.BlockStateMeta;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.Plugin;
@@ -365,6 +367,32 @@ public class ContainerShop implements Shop {
                     amount -= stackSize;
                 }
             }
+
+            // after removing items from the main inventory, if we still need
+            // to remove items, we have to remove them from the shulker boxes
+            for (int i = 0; amount > 0 && i < contents.length; i++) {
+                ItemStack stack = contents[i];
+                if (!Util.isShulkerBox(stack)) {
+                    continue;
+                }
+                BlockStateMeta blockStateMeta = (BlockStateMeta) stack.getItemMeta();
+                ShulkerBox shulker = (ShulkerBox) blockStateMeta.getBlockState();
+                ItemStack[] shulkerContents = shulker.getInventory().getContents();
+                for (int j = 0; amount > 0 && j < shulkerContents.length; j++) {
+                    ItemStack shulkerStack = shulkerContents[j];
+                    // remove it from the shulker
+                    if (matches(shulkerStack)) {
+                        int stackSize = Math.min(amount, shulkerStack.getAmount());
+                        shulkerStack.setAmount(shulkerStack.getAmount() - stackSize);
+                        amount -= stackSize;
+                    }
+                }
+                // update the player's shulker inventory
+                shulker.getInventory().setContents(shulkerContents);
+                blockStateMeta.setBlockState(shulker);
+                stack.setItemMeta(blockStateMeta);
+            }
+
             // Send the players new inventory to them
             buyerInventory.setContents(contents);
             this.setSignText();
@@ -400,6 +428,33 @@ public class ContainerShop implements Shop {
                     Objects.requireNonNull(chestInv).addItem(item);
                     amount -= stackSize;
                 }
+            }
+            // transfer the shulker items
+            for (int i = 0; amount > 0 && i < contents.length; i++) {
+                ItemStack item = contents[i];
+                if (!Util.isShulkerBox(item)) {
+                    continue;
+                }
+                BlockStateMeta blockStateMeta = (BlockStateMeta) item.getItemMeta();
+                ShulkerBox shulker = (ShulkerBox) blockStateMeta.getBlockState();
+                ItemStack[] shulkerContents = shulker.getInventory().getContents();
+                for (int j = 0; amount > 0 && j < shulkerContents.length; j++) {
+                    ItemStack shulkerItem = shulkerContents[j];
+                    if (this.matches(shulkerItem)) {
+                        int stackSize = Math.min(amount, shulkerItem.getAmount());
+                        // make a copy for the shop chest
+                        ItemStack itemCopy = shulkerItem.clone();
+                        itemCopy.setAmount(stackSize);
+                        Objects.requireNonNull(chestInv).addItem(itemCopy);
+                        // remove it from the player's shulker
+                        shulkerItem.setAmount(shulkerItem.getAmount() - stackSize);
+                        amount -= stackSize;
+                    }
+                }
+                // update the player's shulker inventory
+                shulker.getInventory().setContents(shulkerContents);
+                blockStateMeta.setBlockState(shulker);
+                item.setItemMeta(blockStateMeta);
             }
             // Now update the players inventory.
             buyerInventory.setContents(contents);
