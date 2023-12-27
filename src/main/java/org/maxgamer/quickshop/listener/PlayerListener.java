@@ -278,8 +278,7 @@ public class PlayerListener extends AbstractQSListener {
                 && shop == null
                 && item != null
                 && item.getType() != Material.AIR
-                && QuickShop.getPermissionManager().hasPermission(p, "quickshop.create.sell")
-                && p.getGameMode() != GameMode.CREATIVE) {
+                && QuickShop.getPermissionManager().hasPermission(p, "quickshop.create.sell")) {
             if (e.useInteractedBlock() == Event.Result.DENY
                     || !InteractUtil.check(InteractUtil.Action.CREATE, p.isSneaking())
                     || plugin.getConfig().getBoolean("shop.disable-quick-create")
@@ -321,6 +320,10 @@ public class PlayerListener extends AbstractQSListener {
                     break;
                 }
                 last = n;
+            }
+            if (p.getGameMode() == GameMode.CREATIVE) {
+                // If in creative mode, cancel the block breaking, to allow the shop creation
+                e.setCancelled(true);
             }
             // Send creation menu.
             final SimpleInfo info = new SimpleInfo(b.getLocation(), ShopAction.CREATE, e.getItem(), last, false);
