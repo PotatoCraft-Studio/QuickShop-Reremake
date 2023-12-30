@@ -54,68 +54,67 @@ public class SubCommand_Staff implements CommandHandler<Player> {
             if (shop == null || (!shop.getModerator().isModerator(sender.getUniqueId()) && !QuickShop.getPermissionManager().hasPermission(sender, "quickshop.other.staff"))) {
                 continue;
             }
-            switch (cmdArg.length) {
-                case 1:
+            if (cmdArg.length == 1) {
+                switch (cmdArg[0]) {
+                    case "clear":
+                        shop.clearStaffs();
+                        plugin.text().of(sender, "shop-staff-cleared").send();
+                        return;
+                    case "list":
+                        final List<UUID> staffs = shop.getStaffs();
+                        if (staffs.isEmpty()) {
+                            MsgUtil.sendDirectMessage(sender,
+                                    ChatColor.GREEN
+                                            + plugin.text().of(sender, "tableformat.left_begin").forLocale()
+                                            + "Empty");
+                            return;
+                        }
+                        for (UUID uuid : staffs) {
+                            MsgUtil.sendDirectMessage(sender,
+                                    ChatColor.GREEN
+                                            + plugin.text().of(sender, "tableformat.left_begin").forLocale()
+                                            + PlayerFinder.findNameByUUID(uuid));
+                        }
+                        return;
+                    case "add":
+                    case "del":
+                    default:
+                        plugin.text().of(sender, "command.wrong-args").send();
+                        return;
+                }
+            } else {
+                boolean didAction = false;
+                // Loop through the arguments, skipping the action argument (0)
+                for (int i = 1; i < cmdArg.length; i++) {
+                    final PlayerFinder.PlayerProfile profile = PlayerFinder.findPlayerProfileByName(cmdArg[i], false, plugin.isIncludeOfflinePlayer());
+                    if (profile == null) {
+                        plugin.text().of(sender, "unknown-player").send();
+                        continue;
+                    }
+                    String offlinePlayerName = profile.getName();
+                    if (offlinePlayerName == null) {
+                        offlinePlayerName = "null";
+                    }
                     switch (cmdArg[0]) {
-                        case "clear":
-                            shop.clearStaffs();
-                            plugin.text().of(sender, "shop-staff-cleared").send();
-                            return;
-                        case "list":
-                            final List<UUID> staffs = shop.getStaffs();
-                            if (staffs.isEmpty()) {
-                                MsgUtil.sendDirectMessage(sender,
-                                        ChatColor.GREEN
-                                                + plugin.text().of(sender, "tableformat.left_begin").forLocale()
-                                                + "Empty");
-                                return;
-                            }
-                            for (UUID uuid : staffs) {
-                                MsgUtil.sendDirectMessage(sender,
-                                        ChatColor.GREEN
-                                                + plugin.text().of(sender, "tableformat.left_begin").forLocale()
-                                                + PlayerFinder.findNameByUUID(uuid));
-                            }
-                            return;
                         case "add":
+                            shop.addStaff(profile.getUuid());
+                            plugin.text().of(sender, "shop-staff-added", offlinePlayerName).send();
+                            didAction = true;
+                            continue;
                         case "del":
+                            shop.delStaff(profile.getUuid());
+                            plugin.text().of(sender,
+                                    "shop-staff-deleted", offlinePlayerName).send();
+                            didAction = true;
+                            continue;
                         default:
                             plugin.text().of(sender, "command.wrong-args").send();
-                            return;
+                            didAction = true;
                     }
-                default:
-                    boolean didAction = false;
-                    // Loop through the arguments, skipping the action argument (0)
-                    for (int i = 1; i < cmdArg.length; i++) {
-                        final PlayerFinder.PlayerProfile profile = PlayerFinder.findPlayerProfileByName(cmdArg[i], false, plugin.isIncludeOfflinePlayer());
-                        if (profile == null && !cmdArg[i].contains(",")) {
-                            plugin.text().of(sender, "unknown-player").send();
-                            continue;
-                        }
-                        String offlinePlayerName = profile.getName();
-                        if (offlinePlayerName == null) {
-                            offlinePlayerName = "null";
-                        }
-                        switch (cmdArg[0]) {
-                            case "add":
-                                shop.addStaff(profile.getUuid());
-                                plugin.text().of(sender, "shop-staff-added", offlinePlayerName).send();
-                                didAction = true;
-                                continue;
-                            case "del":
-                                shop.delStaff(profile.getUuid());
-                                plugin.text().of(sender,
-                                        "shop-staff-deleted", offlinePlayerName).send();
-                                didAction = true;
-                                continue;
-                            default:
-                                plugin.text().of(sender, "command.wrong-args").send();
-                                didAction = true;
-                        }
-                    }
-                    if (didAction) {
-                        return;
-                    }
+                }
+                if (didAction) {
+                    return;
+                }
             }
         }
         //no match shop
