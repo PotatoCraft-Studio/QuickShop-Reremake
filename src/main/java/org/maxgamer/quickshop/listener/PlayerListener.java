@@ -176,10 +176,6 @@ public class PlayerListener extends AbstractQSListener {
                 if (plugin.getGameVersion().ordinal() >= GameVersion.v1_20_R1.ordinal()) {
                     e.setCancelled(true);
                 }
-                //Cancel for interacting with sign (editing)
-                if (plugin.getGameVersion().ordinal() >= GameVersion.v1_20_R1.ordinal()) {
-                    e.setCancelled(true);
-                }
             }
         }
     }
@@ -192,6 +188,11 @@ public class PlayerListener extends AbstractQSListener {
         }
         if (!Util.canBeShop(b) && !Util.isWallSign(b.getType())) {
             return;
+        }
+
+        //Cancel for interacting with sign (editing)
+        if (plugin.getGameVersion().ordinal() >= GameVersion.v1_20_R1.ordinal()) {
+            e.setCancelled(true);
         }
 
         final Location loc = b.getLocation();
