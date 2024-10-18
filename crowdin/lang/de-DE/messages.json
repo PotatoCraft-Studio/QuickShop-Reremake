@@ -38,7 +38,7 @@
   "select-shop-type-or-cancel-selling-button": "&d[Selling]",
   "select-shop-type-or-cancel-buying-button": "&b[Buying]",
   "select-shop-type-or-cancel-cancel-button": "&c[Cancel]",
-  "not-a-valid-shop-type": "&cYou can only input Buy/Sell/Cancel, your input was {0}.",
+  "not-a-valid-shop-type": "&cDu kannst nur Verkaufen/Ankaufen/Abbrechen eingeben, Ihre Eingabe war {0}.",
   "negative-amount": "&cDu kannst keine negative Anzahl handeln",
   "not-a-number": "&cDu kannst nur eine Zahl eingeben, Deine Eingabe war {0}.",
   "exceeded-maximum": "&cDer Wert hat den Maximalwert in Java überschritten.",
@@ -70,7 +70,7 @@
   "unknown-owner": "Unbekannt",
   "owner-bypass-check": "&eAlle Prüfungen wurden umgangen. Handel erfolgreich! (Sie sind jetzt der Besitzer des Ladens!)",
   "reached-maximum-can-create": "&cDu hast bereits das Maximum von {0}/{1} Shops erstellt!",
-  "reached-maximum-other-can-hold": "&cTarget player has reached the maximum of {0}/{1} shops!",
+  "reached-maximum-other-can-hold": "&cDer Zielspieler hat das Maximum von {0}/{1} Geschäften erreicht!",
   "restricted-prices": "&cEingeschränkter Preis für {0}: Mindestens {1}, maximal {2}",
   "no-enough-money-to-keep-shops": "&cDu hattest nicht genug Geld um deine Shops zu behalten! Alle Shops wurden entfernt...",
   "nothing-to-flush": "&aEs gibt keine neuen Nachrichten zu deinem Shop.",
@@ -80,7 +80,7 @@
   "warn-to-paste": "&eSammelt Daten und lädt diese anschließend auf Pastebin hoch, dies kann eine Weile dauern. &c&lAchtung&c: Die hochgeladenen Daten werden dort eine Woche lang gespeichert. Die Daten können möglicherweise Konfigurationseinstellungen oder andere sensitive Daten enthalten. Stelle sicher diese nur Teammitgliedern und Entwicklern zu Verfügung zu stellen, denen du &lvertraust.",
   "price-too-high": "&cDer Shoppreis ist zu hoch! Du kannst keinen Shop mit einem Preis über {0} erstellen.",
   "you-cant-create-shop-in-there": "&cDu bist nicht berechtigt an diesem Ort ein Shop zu erstellen.",
-  "unknown-player": "&cTarget player doesn't existed or not online, please check the username you typed.",
+  "unknown-player": "&cDieser Spieler existiert nicht oder ist nicht online. Bitte überprüfe, ob der Name korrekt geschrieben wurde.",
   "shop-staff-cleared": "&aAlle Shopmitarbeiter erfolgreich von deinem Shop entfernt.",
   "shop-staff-added": "&a{0} erfolgreich als Shopmitarbeiter für deinen Shop hinzugefügt.",
   "shop-staff-deleted": "&a{0} erfolgreich von deinem Shop als Shopmitarbeiter entfernt.",
@@ -248,7 +248,7 @@
     "freeze-hover": "&eÄndere den Freeze-Status des Shops.",
     "toggledisplay": "&eItem anzeigen: &b{0} &e[&d&lÄndern&e]",
     "toggledisplay-hover": "&eÄndere den Item Anzeigemodus des Shops",
-    "staff": "&aStaff amount: &b{0} &e[&d&lModify&e]"
+    "staff": "&aMitarbeiteranzahl: &b{0} &e[&d&lBearbeiten&e]"
   },
   "tableformat": {
     "full_line": "+---------------------------------------------------+",
