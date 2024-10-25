@@ -1,5 +1,5 @@
 {
-  "_comment": "翻訳者さんこんにちは！Githubから、もしくはコードソースから編集している場合は、https://crowdin.com/project/quickshop-reremakeにアクセスしてください。",
+  "_comment": "翻訳者さんこんにちは！GitHubから、もしくはコードソースから編集している場合は、https://crowdin.com/project/quickshop-reremakeにアクセスしてください。",
   "file-test": "これはテスト用のファイルです。私たちはこれを使って、messages.jsonは壊れていないかをチェックします。ここに好きなイースターエッグを挿入してもいいですよ:)",
   "translation-author": "翻訳者: Ghost_chu, Andre_601",
   "translation-version": "&c&lサポートバージョン: &b&lReremake",
@@ -70,7 +70,7 @@
   "unknown-owner": "不明",
   "owner-bypass-check": "&e全てのチェックをバイパスしました。取引成功！ (あなたがショップの店主になりました！)",
   "reached-maximum-can-create": "&cあなたはすでに最大値を超えて {0} / {1} のショップを作成しています！",
-  "reached-maximum-other-can-hold": "&cTarget player has reached the maximum of {0}/{1} shops!",
+  "reached-maximum-other-can-hold": "&c対象プレイヤーが上限に達しました {0}/{1} ショップ！",
   "restricted-prices": "&c{0} の価格制限: 最低 {1}, 最高 {2}",
   "no-enough-money-to-keep-shops": "&cショップを維持するのに十分な資金がありませんので全てのショップが削除されました...",
   "nothing-to-flush": "&a新しいショップメッセージはありませんでした",
