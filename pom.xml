@@ -531,8 +531,8 @@
         <!--            </exclusions>-->
         <!--        </dependency>-->
         <dependency>
-            <groupId>com.github.jikoo.OpenInv</groupId>
-            <artifactId>openinvapi</artifactId>
+            <groupId>com.github.jikoo</groupId>
+            <artifactId>OpenInv</artifactId>
             <version>4.4.7</version>
         </dependency>
         <dependency>
