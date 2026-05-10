@@ -429,8 +429,8 @@
         <url>https://nexus.sparky.ac/repository/Sparky/</url>
         </repository>-->
         <repository>
-            <id>songoda</id>
-            <url>https://repo.craftaro.com/repository/public/</url>
+            <id>songoda-public</id>
+            <url>https://repo.songoda.com/repository/public/</url>
         </repository>
         <!--MineDown -->
         <repository>
