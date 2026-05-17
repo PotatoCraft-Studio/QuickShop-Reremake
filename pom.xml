@@ -314,7 +314,7 @@
                     <alias>selfsigned</alias>
                     <arguments>
                         <argument>-signedjar</argument>
-                        <argument>target/QuickShop-signed.jar</argument>
+                        <argument>${project.basedir}/target/QuickShop-signed.jar</argument>
                     </arguments>
                     <!--suppress UnresolvedMavenProperty -->
                     <storepass>${env.quickshop-signer-pwd}</storepass>
@@ -534,6 +534,7 @@
             <groupId>com.github.Jikoo</groupId>
             <artifactId>OpenInv</artifactId>
             <version>4.1.8</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
