@@ -353,7 +353,7 @@
   "server-crash-warning": "&cEğer QuickShop Jar dosyasını sunucu çalışırken değiştirdiyseniz/sildiyseniz, /qs reload komutunu çalıştırdığınızda sunucu çökebilir.",
   "reloading-status": {
     "success": "&aYeniden yükleme hata olmadan tamamlandı.",
-    "require-restart": "&aYeniden yükleme tamamlandı. &e(Bazı değişikliklerin etkilenmesi için sunucuyu yeniden başlatmak gerekebilir)",
+    "require-restart": "&aYeniden yükleme tamamlandı. &e(Bazı değişikliklerin etkilenmesi için sunucuyu yeniden başlatmak gerekebilir)))))",
     "failed": "&cYeniden yükleme başarısız, sunucu konsolunu kontrol edin",
     "scheduled": "&aYeniden yükleme tamamlandı. &7(Bazı değişikliklerin etki etmesi biraz zaman aldı)"
   },
