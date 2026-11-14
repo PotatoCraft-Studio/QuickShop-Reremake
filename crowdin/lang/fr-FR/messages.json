@@ -1,7 +1,7 @@
 {
   "_comment": "Hey traducteur! Si vous éditez ceci à partir de Github ou à partir du code source, vous devriez aller sur https://crowdin.com/project/quickshop-reremake",
   "file-test": "Ceci est un fichier texte de test. Nous l'utilisons pour tester si les messages sont cassés. Vous pouvez le remplir avec n'importe quel \"easter eggs\" que vous aimez ici :)",
-  "translation-author": "&cYou only have room for {0} more",
+  "translation-author": "&cIl reste de la place que pour {0} de plus",
   "translation-version": "Version suportée: Reremake",
   "translation-contributors": "Contributeurs : Timtower, Netherfoam, KaiNoMood, Mgazul, JackThePicken, Andre_601, brunopaiva15, HiiRaZ, WAXIE",
   "translation-country": "Langue : Français (fr_FR)",
@@ -118,7 +118,7 @@
     "effects": "&aEffets"
   },
   "bypassing-lock": "&cContournement d'un verrou de QuickShop!",
-  "that-is-locked": "&cCette boutique est verouillée.",
+  "that-is-locked": "&cCette boutique est verrouillée.",
   "how-many-buy": "&aEntre dans le chat, combien tu souhaites &bACHETER&a. Tu peux acheter &e{0}&a. Entre &b{1}&apour tous les acheter.",
   "how-many-sell": "&aEntre dans le chat, combien tu souhaites &dVENDRE&a. Tu peux vendre &e{0}&a. Entre &b{1}&a dans le chat pour tout vendre.",
   "not-allowed-to-create": "&cVous ne pouvez pas créer un shop ici.",
